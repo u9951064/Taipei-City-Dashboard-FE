@@ -4077,6 +4077,268 @@
 				"https://github.com/tpe-doit/YouBike-Optimization"
 			],
 			"contributors": ["tuic"]
+		},
+		"1001": {
+			"id": 1001,
+			"index": "benHu_earthquake",
+			"map_config": [
+				{
+					"index": "benHu_earthquake",
+					"type": "circle",
+					"id": "earthquake_circle",
+					"filter": [
+						"!=",
+						"cluster",
+						true
+					],
+					"paint": {
+						"circle-color": [
+							"case",
+							[
+								"<",
+								[
+									"get",
+									"mag"
+								],
+								2
+							],
+							"#fed976",
+							[
+								"all",
+								[
+									">=",
+									[
+										"get",
+										"mag"
+									],
+									2
+								],
+								[
+									"<",
+									[
+										"get",
+										"mag"
+									],
+									3
+								]
+							],
+							"#feb24c",
+							[
+								"all",
+								[
+									">=",
+									[
+										"get",
+										"mag"
+									],
+									3
+								],
+								[
+									"<",
+									[
+										"get",
+										"mag"
+									],
+									4
+								]
+							],
+							"#fd8d3c",
+							[
+								"all",
+								[
+									">=",
+									[
+										"get",
+										"mag"
+									],
+									4
+								],
+								[
+									"<",
+									[
+										"get",
+										"mag"
+									],
+									5
+								]
+							],
+							"#fc4e2a",
+							"#e31a1c"
+						],
+						"circle-opacity": 0.6,
+						"circle-radius": 12
+					}
+				},
+				{
+					"index": "benHu_earthquake",
+					"type": "symbol",
+					"id": "earthquake_label",
+					"filter": [
+						"!=",
+						"cluster",
+						true
+					],
+					"layout": {
+						"text-field": [
+							"number-format",
+							[
+								"get",
+								"mag"
+							],
+							{
+								"min-fraction-digits": 1,
+								"max-fraction-digits": 1
+							}
+						],
+						"text-font": [
+							"Open Sans Semibold",
+							"Arial Unicode MS Bold"
+						],
+						"text-size": 10
+					},
+					"paint": {
+						"text-color": [
+							"case",
+							[
+								"<",
+								[
+									"get",
+									"mag"
+								],
+								3
+							],
+							"black",
+							"white"
+						]
+					}
+				}
+			],
+			"chart_config": {
+				"types": [
+					"TreemapChart",
+					"BarChart"
+				],
+				"color": [
+					"#FFFFCC",
+					"#e7d198",
+					"#d1a26c",
+					"#b9734a",
+					"#9f4333",
+					"#800026"
+				],
+				"unit": "個網格",
+				"map_filter": [
+					"tsunami",
+					[
+						0,
+						1
+					]
+				]
+			},
+			"name": "Ben Hu Demo",
+			"source": "XXXXXXXXXXXXXXXX",
+			"time_from": "2023-07-28T00:00:00+08:00",
+			"time_to": null,
+			"short_desc": "",
+			"long_desc": "long_desc...........",
+			"use_case": "use_case..............",
+			"tags": [],
+			"links": [
+				"https://tuic.gov.taipei/youbike",
+				"https://github.com/tpe-doit/YouBike-Optimization"
+			],
+			"contributors": [
+				"tuic"
+			]
+		},
+		"1002": {
+			"id": 1002,
+			"index": "taipei_admin",
+			"map_config": [
+				{
+					"index": "taipei_admin",
+					"id": "taipei_admin_fill",
+					"type": "fill",
+					"paint": {
+						"fill-color": [
+							"match",
+							["get", "town_name"],
+							"北投區",
+							"#FFDEDE",
+							"士林區",
+							"#FFDEA1",
+							"內湖區",
+							"#FFFF96",
+							"南港區",
+							"#63FF63",
+							"松山區",
+							"#30FFFF",
+							"信義區",
+							"#4545FF",
+							"中山區",
+							"#A830FF",
+							"大同區",
+							"#FF4FFF",
+							"中正區",
+							"#BFFFFF",
+							"萬華區",
+							"#00D600",
+							"大安區",
+							"#EBEB00",
+							"文山區",
+							"#FFB326",
+							"#FFB326"
+						],
+						"fill-opacity": 0.5
+					}
+				},
+				{
+					"index": "taipei_admin",
+					"id": "taipei_admin_line",
+					"type": "line",
+					"paint": {
+						"line-color": "#000",
+						"line-width": 3
+					}
+				}
+			],
+			"chart_config": {
+				"types": [
+					"TreemapChart",
+					"BarChart"
+				],
+				"color": [
+					"#FFFFCC",
+					"#e7d198",
+					"#d1a26c",
+					"#b9734a",
+					"#9f4333",
+					"#800026"
+				],
+				"unit": "個網格",
+				"map_filter": [
+					"tsunami",
+					[
+						0,
+						1
+					]
+				]
+			},
+			"name": "Ben Hu Demo2",
+			"source": "XXXXXXXXXXXXXXXX",
+			"time_from": "2023-07-28T00:00:00+08:00",
+			"time_to": null,
+			"short_desc": "",
+			"long_desc": "long_desc...........",
+			"use_case": "use_case..............",
+			"tags": [],
+			"links": [
+				"https://tuic.gov.taipei/youbike",
+				"https://github.com/tpe-doit/YouBike-Optimization"
+			],
+			"contributors": [
+				"tuic"
+			]
 		}
 	}
 }

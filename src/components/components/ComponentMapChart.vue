@@ -4,11 +4,11 @@
 <!-- The different modes are controlled by the prop "isMapLayer" (default false) -->
 
 <script setup>
-import { ref, computed } from "vue";
-import { useMapStore } from "../../store/mapStore";
-import { useDialogStore } from "../../store/dialogStore";
+import { ref, computed } from 'vue';
+import { useMapStore } from '../../store/mapStore';
+import { useDialogStore } from '../../store/dialogStore';
 
-import { chartTypes } from "../../assets/configs/apexcharts/chartTypes";
+import { chartTypes } from '../../assets/configs/apexcharts/chartTypes';
 
 const mapStore = useMapStore();
 const dialogStore = useDialogStore();
@@ -18,6 +18,8 @@ const props = defineProps({
 	content: { type: Object },
 	isMapLayer: { type: Boolean, default: false },
 });
+
+const _mapConfig = props.content.map_config
 
 // The default active chart is the first one in the list defined in the dashboard component
 const activeChart = ref(props.content.chart_config.types[0]);
@@ -40,33 +42,69 @@ const dataTime = computed(() => {
 
 // If any map layers are loading, disable the toggle
 const shouldDisable = computed(() => {
-	if (!props.content.map_config) return false;
+	if (!_mapConfig) return false;
 
-	const allMapLayerIds = props.content.map_config.map(
-		(el) => `${el.index}-${el.type}`
-	);
+	const allMapLayerIds = _mapConfig.map((el) => `${el.index}-${el.type}`);
 
-	return (
-		mapStore.loadingLayers.filter((el) => allMapLayerIds.includes(el))
-			.length > 0
-	);
+	return mapStore.loadingLayers.filter(
+		(el) => allMapLayerIds.includes(el))
+		.length > 0;
 });
 
+
+// 這邊就是點了 toggle 後，可以看地圖
 // Open and closes the component as well as communicates to the mapStore to turn on and off map layers
 function handleToggle() {
-	if (!props.content.map_config) {
+	if (!_mapConfig) {
 		if (checked.value) {
-			dialogStore.showNotification(
-				"info",
-				"本組件沒有空間資料，不會渲染地圖"
+			dialogStore.showNotification('info',
+				'本組件沒有空間資料，不會渲染地圖'
 			);
 		}
 		return;
 	}
 	if (checked.value) {
-		mapStore.addToMapLayerList(props.content.map_config);
+		// console.log("=====> _mapConfig: ", _mapConfig);
+		// [
+		// 	{
+		// 		"index": "benHu_earthquake",
+		// 		"id": "earthquake_circle",
+		// 		"type": "circle",
+		// 		"filter": [
+		// 			"!=",
+		// 			"cluster",
+		// 			true
+		// 		],
+		// 		"paint": {
+		// 			"circle-color": [
+		//          .... skip..........
+		// 			],
+		// 			"circle-opacity": 0.6,
+		// 			"circle-radius": 12
+		// 		}
+		// 	},
+		// 	{
+		// 		"index": "benHu_earthquake",
+		// 		"id": "earthquake_label",
+		// 		"type": "symbol",
+		// 		"filter": [
+		// 			"!=",
+		// 			"cluster",
+		// 			true
+		// 		],
+		// 		"layout": {
+		//         .....skip.......
+		// 		},
+		// 		"paint": {
+		// 			"text-color": [
+		//        .... skip ..........
+		// 			]
+		// 		}
+		// 	}
+		// ]
+		mapStore.addToMapLayerList(_mapConfig);
 	} else {
-		mapStore.turnOffMapLayerVisibility(props.content.map_config);
+		mapStore.turnOffMapLayerVisibility(_mapConfig);
 	}
 }
 // Toggles between chart types defined in the dashboard component
@@ -74,7 +112,7 @@ function handleToggle() {
 function changeActiveChart(chartName) {
 	activeChart.value = chartName;
 	mapStore.clearLayerFilter(
-		`${props.content.map_config[0].index}-${props.content.map_config[0].type}`
+		`${_mapConfig[0].index}-${_mapConfig[0].type}`
 	);
 }
 </script>
