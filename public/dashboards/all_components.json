@@ -4077,6 +4077,50 @@
 				"https://github.com/tpe-doit/YouBike-Optimization"
 			],
 			"contributors": ["tuic"]
+		},
+		"148": {
+			"id": 148,
+			"index": "eletricity_generation",
+			"map_config": null,
+			"history_data": false,
+			"chart_config": {
+				"categories": [
+					"2019年",
+					"2020年",
+					"2021年",
+					"2022年",
+					"2023年"
+				],
+				"types": ["ColumnChart"],
+				"color": [
+					"#f44336",
+					"#e91e63",
+					"#9c27b0",
+					"#673ab7",
+					"#3f51b5",
+					"#2196f3",
+					"#03a9f4",
+					"#00bcd4",
+					"#009688",
+					"#4caf50",
+					"#8bc34a",
+					"#cddc39",
+					"#ffeb3b"
+				],
+				"unit": "度"
+			},
+			"name": "台灣歷年能源結構",
+			"source": "台灣歷年能源結構",
+			"time_from": "2012-01-01T00:00:00+08:00",
+			"time_to": "2023-11-15T00:00:00+08:00",
+			"update_freq": 1,
+			"update_freq_unit": "day",
+			"short_desc": "台北市向可持續和可再生能源轉變的趨勢",
+			"long_desc": "台北市向可持續和可再生能源轉變的趨勢",
+			"use_case": "台北市向可持續和可再生能源轉變的趨勢",
+			"links": null,
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }
