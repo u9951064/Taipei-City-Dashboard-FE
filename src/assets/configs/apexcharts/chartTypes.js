@@ -12,4 +12,5 @@ export const chartTypes = {
 	RadarChart: "雷達圖",
 	HeatmapChart: "熱力圖",
 	LineColumnChart: "折線圖+長條圖",
+	SyncingChart: "同步圖",
 };
