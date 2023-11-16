@@ -2,6 +2,7 @@
 /node_modules
 /dist
 /public/mapData
+!/public/mapData/elderly*
 
 # local env files
 .env.production

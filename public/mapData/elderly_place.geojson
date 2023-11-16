@@ -1,0 +1,1751 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5429376",
+					"24.993058"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "景美國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市文山區景中街27號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5232914",
+					"25.0861847"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "百齡高中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市士林區承德路四段177號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5047147",
+					"25.0359735"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "龍山國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市萬華區南寧路46號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5883263",
+					"25.0444585"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "成德國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市南港區東新街108巷23號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5187341",
+					"25.0516304"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "建成國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市大同區長安西路37-1號",
+				"dist": "大同區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5675836",
+					"25.0286896"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "信義國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市信義區松仁路158巷1號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.50757",
+					"25.1380931"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "新民國中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市北投區新民路10號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.575484",
+					"25.0798452"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "內湖高工",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市內湖區內湖路一段520號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5611724",
+					"25.0494093"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "中崙高中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市松山區八德路四段101號",
+				"dist": "松山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5291773",
+					"25.0659203"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "稻江護家",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市中山區新生北路三段55號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5222277",
+					"25.0418667"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "開南高中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市中正區濟南路一段6號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5242651",
+					"25.0348377"
+				]
+			},
+			"properties": {
+				"type": "社區大學",
+				"name": "金甌女中",
+				"homepage": "",
+				"tel": "",
+				"address": "台北市大安區杭州南路二段1號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5046099",
+					"25.134939"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "北投國中",
+				"homepage": "",
+				"tel": "2891-2091#601、804",
+				"address": "臺北市北投區溫泉路62號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.505032",
+					"25.119493"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "立農國小",
+				"homepage": "",
+				"tel": "2821-0702#102",
+				"address": "臺北市北投區立農街一段250號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5248232",
+					"25.0924085"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "士林國小",
+				"homepage": "",
+				"tel": "2881-2231#243",
+				"address": "臺北市士林區大東路165號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5071659",
+					"25.0841054"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "葫蘆國小",
+				"homepage": "",
+				"tel": "2812-9586#812",
+				"address": "臺北市士林區環河北路三段95號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5462377",
+					"25.0805426"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "大直國小",
+				"homepage": "",
+				"tel": "2533-3953#13",
+				"address": "臺北市中山區大直街2號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5295626",
+					"25.0547087"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "吉林國小",
+				"homepage": "",
+				"tel": "2521-9196#832",
+				"address": "臺北市中山區長春路116號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5099967",
+					"25.0305533"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "國語實小",
+				"homepage": "",
+				"tel": "2303-3555#301",
+				"address": "臺北市中正區南海路58號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5366774",
+					"25.0048433"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "萬福國小",
+				"homepage": "",
+				"tel": "2935-3123#112",
+				"address": "臺北市文山區羅斯福路五段170巷32號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5582738",
+					"25.0294154"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "三興國小",
+				"homepage": "",
+				"tel": "2736-4687#13",
+				"address": "臺北市信義區基隆路二段99號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.562343",
+					"25.0625273"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "民權國小",
+				"homepage": "",
+				"tel": "2765-2327#662",
+				"address": "臺北市松山區民權東路四段200號",
+				"dist": "松山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.619421",
+					"25.0397244"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "舊莊國小",
+				"homepage": "",
+				"tel": "2782-1418#112",
+				"address": "臺北市南港區舊莊街一段100號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.61768",
+					"25.0706875"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "東湖國小",
+				"homepage": "",
+				"tel": "2633-9984#186",
+				"address": "臺北市內湖區東湖路115號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5948704",
+					"25.080146"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "康寧國小",
+				"homepage": "",
+				"tel": "2790-1237#123",
+				"address": "臺北市內湖區星雲街121號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5892012",
+					"25.0690834"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "新湖國小",
+				"homepage": "",
+				"tel": "2796-3721#211",
+				"address": "臺北市內湖區民權東路六段138號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5911103",
+					"25.0853115"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "碧湖國小",
+				"homepage": "",
+				"tel": "2790-7161#124",
+				"address": "臺北市內湖區金龍路100號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.560085",
+					"25.085741"
+				]
+			},
+			"properties": {
+				"type": "成人教育",
+				"name": "文湖國小",
+				"homepage": "",
+				"tel": "2658-3515#1022",
+				"address": "臺北市內湖區文湖街15號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.536354",
+					"25.1102978"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "芝山國小",
+				"homepage": "http://new.zsps.tp.edu.tw/xoops/html/",
+				"tel": "2831-6115轉251",
+				"address": "臺北市士林區德行東路285號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5020712",
+					"25.0904715"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "社子國小",
+				"homepage": "http://www.stps.tp.edu.tw/",
+				"tel": "2812-9059轉873",
+				"address": "臺北市11172延平北路六段308號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.482458",
+					"25.1058931"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "富安國小",
+				"homepage": "https://www.fuanps.tp.edu.tw/",
+				"tel": "2180-3192轉651",
+				"address": "臺北市士林區延平北路8段135號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.529834",
+					"25.1052568"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "雨農國小",
+				"homepage": "https://www.ynes.tp.edu.tw/nss/p/index",
+				"tel": "2832-9700轉118",
+				"address": "臺北市士林區忠義街1號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5248232",
+					"25.0924085"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "士林國小",
+				"homepage": "http://www.slps.tp.edu.tw/",
+				"tel": "2881-2231轉241",
+				"address": "臺北市士林區大東路165號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5556668",
+					"25.103717"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "至善國中",
+				"homepage": "https://www.jsjh.tp.edu.tw/",
+				"tel": "2841-1350轉51",
+				"address": "臺北市士林區至善路二段360號",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.505032",
+					"25.119493"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "立農國小",
+				"homepage": "http://www.lnes.tp.edu.tw/",
+				"tel": "2821-0702轉502",
+				"address": "臺北市北投區立農街一段250號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5117748",
+					"25.1156862"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "石牌國小",
+				"homepage": "http://web.spps.tp.edu.tw/front/bin/home.phtml",
+				"tel": "2822-7484轉553",
+				"address": "臺北市北投區致遠二路80號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5221329",
+					"25.1120305"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "明德國小",
+				"homepage": "http://www.mdes.tp.edu.tw/",
+				"tel": "2822-9732轉1403",
+				"address": "臺北市北投區明德路190號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5051754",
+					"25.1383735"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "逸仙國小",
+				"homepage": "http://www.ysps.tp.edu.tw/",
+				"tel": "2891-4537轉150",
+				"address": "臺北市北投區新民路2號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5590765",
+					"24.9999707"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "興華國小",
+				"homepage": "http://www.hhps.tp.edu.tw/",
+				"tel": "2239-3070轉141",
+				"address": "臺北市文山區興隆路3段125巷6號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5627777",
+					"24.9873726"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "明道國小",
+				"homepage": "http://www.mdps.tp.edu.tw/web/index.php",
+				"tel": "2939-2821轉140",
+				"address": "臺北市文山區木柵路二段138巷61號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5601762",
+					"24.9887396"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "武功國小",
+				"homepage": "http://www.wkps.tp.edu.tw/",
+				"tel": "2931-4360轉20",
+				"address": "臺北市文山區興隆路1段68號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5497565",
+					"25.0049504"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "興福國中",
+				"homepage": "http://www.hfjh.tp.edu.tw/node/3110",
+				"tel": "2932-2024轉511",
+				"address": "臺北市文山區福興路80號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5366774",
+					"25.0048433"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "萬福國小",
+				"homepage": "http://www.wfps.tp.edu.tw/",
+				"tel": "2935-3123轉111",
+				"address": "臺北市文山區羅斯福路五段170巷32號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5700674",
+					"24.9902241"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "木柵國小",
+				"homepage": "http://www.mjes.tp.edu.tw/",
+				"tel": "2939-1234轉652",
+				"address": "臺北市文山區木柵路三段191號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5785178",
+					"24.9910035"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立大誠高中",
+				"homepage": "http://www.tcsh.tp.edu.tw/main_n.php",
+				"tel": "2234-8989轉64",
+				"address": "臺北市文山區秀明路2段175號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5674415",
+					"25.0009226"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "萬芳國小",
+				"homepage": "https://www.wfes.tp.edu.tw/",
+				"tel": "2230-1232轉841",
+				"address": "臺北市文山區萬和街1號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5507594",
+					"25.0017407"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "興德國小",
+				"homepage": "http://www.hdps.tp.edu.tw/front/bin/home.phtml",
+				"tel": "2932-9431轉15",
+				"address": "臺北市文山區興隆路二段235號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.4985878",
+					"25.0308183"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "雙園國小",
+				"homepage": "https://www.syps.tp.edu.tw/",
+				"tel": "2306-1893轉151",
+				"address": "臺北市萬華區莒光路315號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.4927516",
+					"25.0275857"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "雙園國中",
+				"homepage": "http://www.syjhs.tp.edu.tw",
+				"tel": "2303-0827轉151",
+				"address": "臺北市萬華區興義街2號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5047147",
+					"25.0359735"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "龍山國中",
+				"homepage": "http://www.lsjh.tp.edu.tw/enable3/",
+				"tel": "2336-2789轉209",
+				"address": "臺北市萬華區南寧路46號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.4930584",
+					"25.0311567"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "大理國小",
+				"homepage": "http://www.tlps.tp.edu.tw/",
+				"tel": "2306-4311轉5102",
+				"address": "臺北市萬華區艋舺大道389號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5123813",
+					"25.0613868"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "太平國小",
+				"homepage": "http://web.tpes.tp.edu.tw/enable/",
+				"tel": "2553-2229轉840",
+				"address": "臺北市大同區延平北路二段239號",
+				"dist": "大同區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5161576",
+					"25.0648806"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "大同國小",
+				"homepage": "http://web.ttps.tp.edu.tw/",
+				"tel": "2596-5407轉361",
+				"address": "臺北市大同區大龍街51號",
+				"dist": "大同區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5677759",
+					"25.0254259"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "吳興國小",
+				"homepage": "http://www.wsps.tp.edu.tw/",
+				"tel": "2720-0226轉60",
+				"address": "臺北市信義區松仁路226號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5791866",
+					"25.0438378"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "永春國小",
+				"homepage": "http://www.ycps.tp.edu.tw/",
+				"tel": "2764-1314轉640",
+				"address": "臺北市松山路225巷48號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5741587",
+					"25.0483336"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "永吉國中",
+				"homepage": "http://www.yjjh.tp.edu.tw/",
+				"tel": "2764-9066轉168",
+				"address": "臺北市信義區松隆路161號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5545278",
+					"25.0256562"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立喬治工商",
+				"homepage": "http://www.gvs.tp.edu.tw/",
+				"tel": "2738-6515轉233",
+				"address": "臺北市信義區基隆路二段155號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.58347",
+					"25.042601"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立協和祐德高中",
+				"homepage": "http://www.hhvs.tp.edu.tw/ischool/publish_page/0/",
+				"tel": "2726-3131轉175",
+				"address": "臺北市信義區忠孝東路五段790巷27號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5504269",
+					"25.0189218"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "大安國小",
+				"homepage": "http://www.taes.tp.edu.tw/",
+				"tel": "2732-2332轉843",
+				"address": "臺北市信義區臥龍街129號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5355759",
+					"25.0140647"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "銘傳國小",
+				"homepage": "www.mhps.tp.edu.tw",
+				"tel": "2363-9815轉17",
+				"address": "臺北市羅斯福路四段21號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5224602",
+					"25.0318036"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立金甌女中",
+				"homepage": "http://daan.cogsh.tp.edu.tw",
+				"tel": "2391-5081轉16",
+				"address": "臺北市大安區杭州南路二段一號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5408249",
+					"25.039625"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "懷生國中",
+				"homepage": "www.hsjh.tp.edu.tw",
+				"tel": "2721-5078轉553",
+				"address": "臺北市大安區忠孝東路3段248巷30號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5510716",
+					"25.0318362"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立東方工商",
+				"homepage": "https://www.tfvs.tp.edu.tw/",
+				"tel": "2755-4616轉101",
+				"address": "臺北市大安區信義路四段186巷8號",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5868725",
+					"25.0470902"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "成德國小",
+				"homepage": "https://www.ctps.tp.edu.tw/",
+				"tel": "2785-1376轉165",
+				"address": "臺北市南港區東新街65號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.617798",
+					"25.0427148"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "舊莊國小",
+				"homepage": "http://www.zzes.tp.edu.tw/",
+				"tel": "2782-1418轉112",
+				"address": "臺北市南港區舊莊街1段100號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5948114",
+					"25.0536309"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "玉成國小",
+				"homepage": "http://www.yhes.tp.edu.tw/bin/home.php",
+				"tel": "2783-6049轉160",
+				"address": "臺北市南港區向陽路31號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.6187981",
+					"25.0542606"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "誠正國中",
+				"homepage": "http://www.ccjh.tp.edu.tw/nss/p/index",
+				"tel": "2782-8094轉1410",
+				"address": "臺北市南港區富康街1巷24號",
+				"dist": "南港區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.6005675",
+					"25.0882053"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "大湖國小",
+				"homepage": "http://www.dhps.tp.edu.tw",
+				"tel": "2791-5870轉61",
+				"address": "臺北市內區大湖山莊街170號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5911103",
+					"25.0853115"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "碧湖國小",
+				"homepage": "http://www.bhps.tp.edu.tw/xoops/",
+				"tel": "2790-7161轉164",
+				"address": "臺北市內湖區金龍路100號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.560085",
+					"25.085741"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "文湖國小",
+				"homepage": "http://www.whups.tp.edu.tw/",
+				"tel": "2658-3515轉1091",
+				"address": "臺北市內湖區文湖街15號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5895052",
+					"25.0776193"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立文德女中",
+				"homepage": "http://www.sfgsh.tp.edu.tw",
+				"tel": "2790-4570轉210",
+				"address": "臺北市內湖區成功路3段70號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5782913",
+					"25.0503201"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "松山國小",
+				"homepage": "http://w3.ssps.tp.edu.tw/",
+				"tel": "2767-2907轉643",
+				"address": "臺北市松山區八德路4段746號",
+				"dist": "松山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5663535",
+					"25.05537"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "西松高中",
+				"homepage": "http://www.hssh.tp.edu.tw/bin/home.php",
+				"tel": "2528-6618轉214",
+				"address": "臺北市松山區健康路325巷7號",
+				"dist": "松山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5222277",
+					"25.0418667"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立開南高中",
+				"homepage": "http://www.knvs.tp.edu.tw/",
+				"tel": "2321-2666轉663",
+				"address": "臺北市中正區濟南路一段6號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5142953",
+					"25.0356043"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "臺北市立大學聰明老化跨域創新中心",
+				"homepage": "https://taipeiway.utaipei.edu.tw/",
+				"tel": "2311-3040轉8524",
+				"address": "臺北市中正區愛國西路1號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5143552",
+					"25.0251457"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "螢橋國小",
+				"homepage": "http://tw.school.uschoolnet.com/?id=es00000094",
+				"tel": "2305-4620轉110",
+				"address": "臺北市中正區詔安街29號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5263398",
+					"25.0190252"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "螢橋國中",
+				"homepage": "https://www.ycjh.tp.edu.tw/nss/p/index",
+				"tel": "2368-8667轉620",
+				"address": "臺北市中正區汀州路三段4號",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5269643",
+					"25.0636402"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "中山國小",
+				"homepage": "http://www.csps.tp.edu.tw/",
+				"tel": "2591-4085轉26",
+				"address": "臺北市民權東路一段69號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5616848",
+					"25.0777662"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "濱江國小",
+				"homepage": "http://www.bjes.tp.edu.tw/",
+				"tel": "8502-1571#1200",
+				"address": "臺北市中山區樂群二路266巷99號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5607499",
+					"25.07955"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "濱江實中",
+				"homepage": "http://www.bjjh.tp.edu.tw/default_page.asp",
+				"tel": "8502-0126轉503",
+				"address": "臺北市中山區樂群二路262號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5259829",
+					"25.0617989"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "新興國中",
+				"homepage": "http://www.hhjh.tp.edu.tw/",
+				"tel": "2571-4211轉603、602",
+				"address": "臺北市中山區林森北路511號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5210761",
+					"25.0666839"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "私立大同高中",
+				"homepage": "https://www.tsh.tp.edu.tw/",
+				"tel": "2592-5252轉2433、909",
+				"address": "臺北市中山區中山北路三段40號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5462377",
+					"25.0805426"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "大直國小",
+				"homepage": "http://www.tzes.tp.edu.tw/",
+				"tel": "2533-3953轉53",
+				"address": "臺北市中山區大直街2號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5295754",
+					"25.0547308"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "吉林國小",
+				"homepage": "http://www.clps.tp.edu.tw/vschool/index2.asp",
+				"tel": "2521-9196轉835",
+				"address": "臺北市中山區長春路116號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.543251",
+					"25.0634804"
+				]
+			},
+			"properties": {
+				"type": "樂齡學堂",
+				"name": "五常國中",
+				"homepage": "https://www.wcjhs.tp.edu.tw/",
+				"tel": "2501-4320轉107",
+				"address": "臺北市中山區復興北路430巷1號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5383876",
+					"25.0291583"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市樂齡學習示範中心",
+				"homepage": "http://epage.tpml.edu.tw/files/11-1000-131.php?Lang=zh-tw",
+				"tel": "02-2755-2823轉2302",
+				"address": "10659臺北市大安區建國南路2段125號11樓",
+				"dist": "大安區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5026577",
+					"25.0374717"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市萬華區樂齡學習中心",
+				"homepage": "http://eweb.tlsps.tp.edu.tw/eweb/index.php?home=ew00000000035",
+				"tel": "02-23361266轉140",
+				"address": "10852臺北市萬華區桂林路64號",
+				"dist": "萬華區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5677759",
+					"25.0254259"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市信義區樂齡學習中心",
+				"homepage": "http://www.wsps.tp.edu.tw/News.aspx?n=CB382DB5D9184DFB&sms=A83F3394EB3FBD88",
+				"tel": "02-2720-0226轉60",
+				"address": "11046臺北市信義區松仁路226號",
+				"dist": "信義區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5298914",
+					"25.0536299"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市中山區樂齡學習中心",
+				"homepage": "http://www.clps.tp.edu.tw/vschool/ThemePage/ThemePage.asp?TPId=19",
+				"tel": "02-2521-9196轉700",
+				"address": "10458臺北市中山區吉林路110號",
+				"dist": "中山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5420504",
+					"24.9899534"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市文山區樂齡學習中心",
+				"homepage": "https://www.facebook.com/jingxinh17/",
+				"tel": "02-2933-1244轉11",
+				"address": "11669臺北市文山區景後街151號",
+				"dist": "文山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5132821",
+					"25.0742632"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市大同區樂齡學習中心",
+				"homepage": "https://zh-tw.facebook.com/Datonglib",
+				"tel": "02-2594-3236轉9",
+				"address": "10371臺北市大同區重慶北路3段318號",
+				"dist": "大同區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5107816",
+					"25.0823049"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市士林區樂齡學習中心",
+				"homepage": "http://epage2.tpml.edu.tw/bin/home.php",
+				"tel": "02-2812-6513",
+				"address": "11165臺北市士林區延平北路5段136巷1號9樓",
+				"dist": "士林區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5628326",
+					"25.0591377"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市松山區樂齡學習中心",
+				"homepage": "http://www.facebook.com/shsalc",
+				"tel": "02-2760-0408轉12",
+				"address": "10573臺北市松山區民生東路五段163之1號6樓",
+				"dist": "松山區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.61261",
+					"25.0674149"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市內湖區樂齡學習中心",
+				"homepage": "https://www.facebook.com/neihuSALC/?ref=bookmarks",
+				"tel": "02-2632-3378",
+				"address": "11480臺北市內湖區五分街6號",
+				"dist": "內湖區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.4671448",
+					"25.1198847"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市北投區樂齡學習中心",
+				"homepage": "https://www.facebook.com/%E9%97%9C%E6%B8%A1%E6%A8%82%E9%BD%A1-624019501024241/",
+				"tel": "02-2858-2895",
+				"address": "11260臺北市北投區知行路212號",
+				"dist": "北投區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5268698",
+					"25.0427674"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市中正區樂齡學習中心",
+				"homepage": "http://www.oikos.tw/",
+				"tel": "02-2341-4322轉606、616",
+				"address": "10050臺北市中正區杭州南路一段15-1號B1",
+				"dist": "中正區"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"121.5868725",
+					"25.0470902"
+				]
+			},
+			"properties": {
+				"type": "樂齡學習中心",
+				"name": "臺北市南港區樂齡學習中心",
+				"homepage": "https://www.facebook.com/ctps65/",
+				"tel": "02-2785-1376轉165",
+				"address": "11556臺北市南港區東新街65號",
+				"dist": "南港區"
+			}
+		}
+	]
+}
