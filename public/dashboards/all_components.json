@@ -4892,7 +4892,7 @@
 		},
 		"300": {
 			"id": 300,
-			"index": "elderly_education",
+			"index": "elderly_budget",
 			"chart_config": {
 				"types": [
 					"BarChart",
@@ -4926,7 +4926,7 @@
 		},
 		"301": {
 			"id": 301,
-			"index": "elderly_education",
+			"index": "elderly_depart_budget",
 			"chart_config": {
 				"types": [
 					"StackedGroupedBarChart",
@@ -4945,6 +4945,34 @@
 				"stroke": { "curve": "straight" }
 			},
 			"name": "各機關投入樂齡教育資源",
+			"source": "資訊局",
+			"time_from": "2023-07-28T00:00:00+08:00",
+			"time_to": null,
+			"short_desc": "",
+			"long_desc": "展示YouBike未設站區的潛在用車需求，這些資訊基於大數據中心研究提供，詳細預測方法可參考開源成果Github，更新頻率不定期。",
+			"use_case": "YouBike未設站區潛在需求將協助您了解未來可能需要增設YouBike站點的地區。這有助於規劃YouBike的擴展和改進，以滿足日益增長的需求。",
+			"tags": [],
+			"links": [
+				"https://tuic.gov.taipei/youbike",
+				"https://github.com/tpe-doit/YouBike-Optimization"
+			],
+			"contributors": [
+				"tuic"
+			]
+		},
+		"302": {
+			"id": 302,
+			"index": "elderly_age",
+			"history_data": true,
+			"chart_config": {
+				"types": [
+					"BiDistributionChart"
+				],
+				"unit": "人",
+				"categories": ["0~4歲","5~9歲","10~14歲","15~19歲","20~24歲","25~29歲","30~34歲","35~39歲","40~44歲","45~49歲","50~54歲","55~59歲","60~64歲","65~69歲","70~74歲","75~79歲","80~84歲","85~89歲","90歲以上"],
+				"stroke": { "curve": "straight" }
+			},
+			"name": "男女年齡層分佈",
 			"source": "資訊局",
 			"time_from": "2023-07-28T00:00:00+08:00",
 			"time_to": null,
