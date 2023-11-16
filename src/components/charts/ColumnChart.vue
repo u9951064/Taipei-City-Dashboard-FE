@@ -24,22 +24,9 @@ const chartOptions = ref({
 		enabled: props.chart_config.categories ? false : true,
 		offsetY: 20,
 	},
-	// annotations: {
-	// 	yaxis: [
-	// 		{
-	// 			y: 400_000_000_000,
-	// 			borderColor: "#00E396",
-	// 			label: {
-	// 				borderColor: "#00E396",
-	// 				style: {
-	// 					color: "#fff",
-	// 					background: "#00E396",
-	// 				},
-	// 				text: "可再生能源貢獻目標",
-	// 			},
-	// 		},
-	// 	],
-	// },
+	annotations: props.chart_config.annotations
+		? props.chart_config.annotations
+		: {},
 	grid: {
 		show: false,
 	},
