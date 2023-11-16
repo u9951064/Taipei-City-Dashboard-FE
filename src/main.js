@@ -23,7 +23,10 @@ import VueApexCharts from "vue3-apexcharts";
 // Import Global Components
 import DistrictChart from "./components/charts/DistrictChart.vue";
 import DonutChart from "./components/charts/DonutChart.vue";
+import AreaChart from "./components/charts/AreaChart.vue";
 import BarChart from "./components/charts/BarChart.vue";
+import GroupedBarChart from "./components/charts/GroupedBarChart.vue";
+import StackedGroupedBarChart from "./components/charts/StackedGroupedBarChart.vue";
 import TreemapChart from "./components/charts/TreemapChart.vue";
 import ColumnChart from "./components/charts/ColumnChart.vue";
 import BarPercentChart from "./components/charts/BarPercentChart.vue";
@@ -45,7 +48,10 @@ app.use(VueApexCharts);
 
 app.component("DistrictChart", DistrictChart);
 app.component("DonutChart", DonutChart);
+app.component("AreaChart", AreaChart);
 app.component("BarChart", BarChart);
+app.component("GroupedBarChart", GroupedBarChart);
+app.component("StackedGroupedBarChart", StackedGroupedBarChart);
 app.component("TreemapChart", TreemapChart);
 app.component("ColumnChart", ColumnChart);
 app.component("BarPercentChart", BarPercentChart);

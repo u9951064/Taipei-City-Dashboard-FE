@@ -1,7 +1,10 @@
 export const chartTypes = {
 	DonutChart: "圓餅圖",
+	AreaChart: "面色圖",
 	BarChart: "橫向長條圖",
 	ColumnChart: "縱向長條圖",
+	StackedGroupedBarChart: "群組堆疊長條圖",
+	GroupedBarChart: "群組長條圖",
 	BarPercentChart: "長條圖(%)",
 	TreemapChart: "矩形圖",
 	DistrictChart: "行政區圖",
