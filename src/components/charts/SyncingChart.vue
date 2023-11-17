@@ -30,9 +30,9 @@ const generateChartOptions = (chartId, index) => {
 		},
 		markers: {
 			hover: {
-				size: 5,
+				size: 3,
 			},
-			size: 3,
+			size: 0,
 			strokeWidth: 0,
 		},
 		stroke: {
@@ -63,6 +63,7 @@ const generateChartOptions = (chartId, index) => {
 			},
 		},
 		xaxis: {
+			tickAmount: 10,
 			axisBorder: {
 				color: "#555",
 				height: "0.8",

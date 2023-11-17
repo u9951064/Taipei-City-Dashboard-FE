@@ -18,12 +18,14 @@ const parseSeries = computed(() => [
 		type: "column",
 		data,
 	})),
-	{
-		name: props.series.line.name,
-		type: "line",
-		data: props.series.line.data,
-		color: "#ffffff",
-	},
+	props.series.line
+		? {
+				name: props.series.line.name,
+				type: "line",
+				data: props.series.line.data,
+				color: "#ffffff",
+		  }
+		: {},
 ]);
 
 const chartOptions = ref({
@@ -32,7 +34,7 @@ const chartOptions = ref({
 		toolbar: {
 			show: false,
 		},
-		type: "line",
+		type: props.series.line ? "line" : "bar",
 	},
 	colors: props.chart_config.color,
 	dataLabels: {
@@ -77,6 +79,7 @@ const chartOptions = ref({
 		},
 	},
 	xaxis: {
+		tickAmount: 10,
 		axisBorder: {
 			show: false,
 		},
