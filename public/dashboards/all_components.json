@@ -4536,6 +4536,38 @@
 			],
 			"tags": [],
 			"contributors": ["tuic"]
+		},
+		"154": {
+			"id": 154,
+			"index": "renewable_energy_generation",
+			"history_data": false,
+			"map_config": null,
+			"chart_config": {
+				"types": ["GroupedBarChart"],
+				"unit": "度",
+				"categories": [
+					"太陽光電",
+					"慣常水力",
+					"風力",
+					"廢棄物能",
+					"生質能",
+					"地熱"
+				]
+			},
+			"name": "再生能源發電結構",
+			"source": "再生能源發電結構",
+			"time_from": "2023-01-01T23:59:59+08:00",
+			"time_to": "2023-05-01T23:59:59+08:00",
+			"update_freq": 1,
+			"update_freq_unit": "month",
+			"short_desc": "再生能源發電結構",
+			"long_desc": "再生能源發電結構",
+			"use_case": "再生能源發電結構",
+			"links": [
+				"https://data.taipei/dataset/detail?id=dc7e246a-a88e-42f8-8cd6-9739209af774"
+			],
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }
