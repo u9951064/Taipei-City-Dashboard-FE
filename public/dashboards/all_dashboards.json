@@ -3,7 +3,7 @@
 		{
 			"name": "步步為銀",
 			"index": "elderly",
-			"components": ["300", "301", "302", "303"],
+			"components": ["300", "301", "302", "303", "304"],
 			"icon": "elderly_woman"
 		},
 		{
