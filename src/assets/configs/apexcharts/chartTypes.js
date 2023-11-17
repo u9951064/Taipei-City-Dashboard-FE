@@ -13,4 +13,5 @@ export const chartTypes = {
 	HeatmapChart: "熱力圖",
 	LineColumnChart: "折線圖+長條圖",
 	SyncingChart: "同步圖",
+	GroupedBarChart: "群組長條圖",
 };
