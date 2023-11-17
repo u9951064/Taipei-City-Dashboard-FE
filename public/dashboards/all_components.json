@@ -4085,11 +4085,8 @@
 			"history_data": false,
 			"chart_config": {
 				"categories": [
-					"2019年",
-					"2020年",
-					"2021年",
-					"2022年",
-					"2023年"
+					2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,
+					2022, 2023
 				],
 				"types": ["ColumnChart"],
 				"color": [
@@ -4110,9 +4107,9 @@
 				"annotations": {
 					"yaxis": [
 						{
-							"y": 400000000000,
+							"y": 172892343734,
 							"label": {
-								"text": "可再生能源貢獻目標"
+								"text": "總電力60–70%為再生能源(以2022計算)"
 							}
 						}
 					]
@@ -4214,6 +4211,46 @@
 			"short_desc": "台北市向可持續和可再生能源轉變的趨勢",
 			"long_desc": "台北市向可持續和可再生能源轉變的趨勢",
 			"use_case": "台北市向可持續和可再生能源轉變的趨勢",
+			"tags": [],
+			"contributors": ["tuic"]
+		},
+		"152": {
+			"id": 107,
+			"index": "ev_charging_station",
+			"chart_config": {
+				"types": ["DistrictChart", "ColumnChart"],
+				"color": ["#A25FAD"],
+				"unit": "座",
+				"map_filter": [
+					"dist",
+					[
+						"北投區",
+						"士林區",
+						"內湖區",
+						"南港區",
+						"松山區",
+						"信義區",
+						"中山區",
+						"大同區",
+						"中正區",
+						"萬華區",
+						"大安區",
+						"文山區"
+					]
+				]
+			},
+			"name": "電動車充電樁行政區圖",
+			"source": "電動車充電樁行政區圖",
+			"time_from": null,
+			"time_to": null,
+			"update_freq": null,
+			"update_freq_unit": null,
+			"short_desc": "電動車充電樁行政區圖",
+			"long_desc": "電動車充電樁行政區圖",
+			"use_case": "電動車充電樁行政區圖",
+			"links": [
+				"https://data.taipei/dataset/detail?id=cd050577-115f-4299-b37a-012ff490a632"
+			],
 			"tags": [],
 			"contributors": ["tuic"]
 		}
