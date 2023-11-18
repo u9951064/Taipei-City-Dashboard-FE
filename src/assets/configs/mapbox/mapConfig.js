@@ -288,6 +288,29 @@ export const maplayerCommonLayout = {
 	"symbol-triangle_white": {
 		"icon-image": "triangle_white",
 	},
+	"symbol-charging_station": {
+		"icon-image": [
+			"case",
+			["==", ["get", "vehicle_type"], '汽車'],
+			"charging_scooter",
+			["==", ["get", "vehicle_type"], '機車'],
+			"charging_car",
+			"charging_unknown",
+		],
+		"icon-size": [
+			"interpolate",
+			["linear"],
+			["zoom"],
+			0.03125,
+			0.0625,
+			0.09375,
+			0.125,
+			0.15625,
+			0.1875,
+			0.21875,
+			0.25
+		],
+	},
 	"symbol-youbike": {
 		"icon-image": [
 			"case",

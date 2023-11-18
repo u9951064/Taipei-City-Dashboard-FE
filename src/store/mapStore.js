@@ -151,6 +151,9 @@ export const useMapStore = defineStore("map", {
 		addSymbolSources() {
 			const images = [
 				"metro",
+				"charging_scooter",
+				"charging_car",
+				"charging_unknown",
 				"triangle_green",
 				"triangle_white",
 				"bike_green",
@@ -423,7 +426,7 @@ export const useMapStore = defineStore("map", {
 					layers: this.currentVisibleLayers,
 				}
 			);
-			
+
 			// Return if there is no info in the click
 			if (!clickFeatureDatas || clickFeatureDatas.length === 0) {
 				return;
@@ -576,7 +579,7 @@ export const useMapStore = defineStore("map", {
 				return;
 			}
 			this.map.setFilter(layer_id, null);
-			console.error('aaaa')
+			console.error("aaaa");
 		},
 
 		/* Clearing the map */

@@ -4,18 +4,13 @@ import mapboxGl from "mapbox-gl";
 export class CircleDonutChartMap {
 	constructor() {
 		this.map = undefined;
-		this.circleLayerSource = `eco_charging_stations-circle-source`;
 		this.symbolLayerSource = `eco_charging_stations-symbol-source`;
 		this.mapConfig = {};
 		this.markers = {};
 		this.markersOnScreen = {};
 		this.dataSourceId = undefined;
 		// TODO: 如果這邊需要調整， 目前的寫法，all_componenets.json 也需要調整, 目前這邊還沒有達到共用，可以改進
-		this.colors = ["#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c"];
-	}
-
-	getCircleLayerSource() {
-		return this.circleLayerSource;
+		this.colors = ["#9DECF7", "#429AC6"];
 	}
 
 	getSymbolLayerSource() {
@@ -23,15 +18,13 @@ export class CircleDonutChartMap {
 	}
 
 	onClick(map) {
-		if (map.getSource(this.circleLayerSource) || map.getSource(this.symbolLayerSource)) return;
+		if (map.getSource(this.symbolLayerSource) || map.getSource(this.symbolLayerSource)) return;
 	}
 
 	onRender(map) {
-		if (map.getSource(this.circleLayerSource) && map.isSourceLoaded(this.circleLayerSource)) {
+		if (map.getSource(this.symbolLayerSource) && map.isSourceLoaded(this.symbolLayerSource)) {
 			this._updateMarkers(map);
 		}
-
-		if (!map.getSource(this.symbolLayerSource)) return;
 	}
 
 	setupDataSource(map, map_config, data) {
@@ -44,7 +37,7 @@ export class CircleDonutChartMap {
 			data: { ...data },
 			// https://docs.mapbox.com/style-spec/reference/sources/#geojson-clusterProperties
 			cluster: true, // If the data is a collection of point features, setting this to true clusters the points by radius into groups.
-			clusterRadius: 50, // default is 50, Radius of each cluster if clustering is enabled. A value of 512 indicates a radius equal to the width of a tile.
+			clusterRadius: 40, // default is 50, Radius of each cluster if clustering is enabled. A value of 512 indicates a radius equal to the width of a tile.
 			clusterProperties: {
 				// ["case", condition, valueIfTrue, valueIfFalse] is a conditional statement in Mapbox GL JS's expression language.
 				// condition: This is the condition that is evaluated. If the condition is true, the expression returns valueIfTrue; otherwise, it returns valueIfFalse.
@@ -85,7 +78,7 @@ export class CircleDonutChartMap {
 
 		// after the GeoJSON data is loaded, update markers on the screen on every frame
 		// this.map.on("render", () => {
-		// 	console.log('qq', this.dataSourceId);
+		// 	console.error('qq', this.dataSourceId);
 		// 	if (!this.map.isSourceLoaded(this.dataSourceId)) return;
 		// 	this._updateMarkers();
 		// });
@@ -140,7 +133,6 @@ export class CircleDonutChartMap {
 	}
 
 	_createDonutChart(countByEachMagArr) {
-		console.error(countByEachMagArr)
 		const offsets = []; // an array that stores cumulative offsets for each magnitude level.
 
 		let totalCount = 0;

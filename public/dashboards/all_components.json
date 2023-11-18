@@ -4140,8 +4140,9 @@
 			"map_config": [
 				{
 					"index": "eco_charging_stations",
-					"type": "circle",
-					"needCollection": true,
+					"type": "symbol",
+					"icon": "charging_station",
+					"needCollection": false,
 					"id": "eco_charging_stations",
 					"property": [
 						{
@@ -4170,78 +4171,12 @@
 						"cluster",
 						true
 					],
-					"paint": {
-						"circle-color": [
-							"case", 
-							["==", ["get", "vehicle_type"], "汽車"], "#9DECF7", 
-							["==", ["get", "vehicle_type"], "機車"], "#BFF294", 
-							"#BFF294"
-						],
-						"circle-opacity": 0.6,
-						"circle-radius": 12
-					},
 					"title": "充電樁"
-				},
-				{
-					"index": "eco_charging_stations",
-					"type": "symbol",
-					"id": "earthquake_label",
-					"needCollection": true,
-					"filter": [
-						"!=",
-						"cluster",
-						true
-					],
-					"property": [
-						{
-							"key": "vehicle_type",
-							"name": "適用車種"
-						},
-						{
-							"key": "name",
-							"name": "名稱"
-						},
-						{
-							"key": "address",
-							"name": "地址"
-						},
-						{
-							"key": "charging_stand_amount",
-							"name": "汽車"
-						},
-						{
-							"key": "battery_amount",
-							"name": "機車"
-						}
-					],
-					"layout": {
-						"text-field": [
-							"number-format",
-							[
-								"case", 
-								["==", ["get", "vehicle_type"], "汽車"], ["get", "charging_stand_amount"], 
-								["get", "battery_amount"]
-							],
-							{
-								"min-fraction-digits": 1,
-								"max-fraction-digits": 1
-							}
-						],
-						"text-font": [
-							"Open Sans Semibold",
-							"Arial Unicode MS Bold"
-						],
-						"text-size": 10
-					},
-					"paint": {
-						"text-color": "#3f51b5"
-					},
-					"title": ""
 				}
 			],
 			"chart_config": {
 				"types": ["DistrictChart", "ColumnChart"],
-				"color": ["#A25FAD"],
+				"color": ["#83DBF0"],
 				"unit": "座",
 				"map_filter": [
 					"dist",
