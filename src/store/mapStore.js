@@ -159,6 +159,12 @@ export const useMapStore = defineStore("map", {
 				"bike_green",
 				"bike_orange",
 				"bike_red",
+				"green_building_bronze",
+				"green_building_bypass",
+				"green_building_diamond",
+				"green_building_gold",
+				"green_building_pass",
+				"green_building_silver",
 			];
 			images.forEach((element) => {
 				this.map.loadImage(
@@ -529,6 +535,7 @@ export const useMapStore = defineStore("map", {
 				this.AddArcMapLayer(map_config, toBeFiltered);
 				return;
 			}
+
 			this.map.setFilter(layer_id, ["==", ["get", property], key]);
 		},
 		// Remove any filters on a map layer
@@ -558,7 +565,6 @@ export const useMapStore = defineStore("map", {
 				return;
 			}
 			this.map.setFilter(layer_id, null);
-			console.error("aaaa");
 		},
 
 		/* Clearing the map */

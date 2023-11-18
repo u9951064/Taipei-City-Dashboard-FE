@@ -75,13 +75,6 @@ export class CircleDonutChartMap {
 
 
 		this.map.addLayer(layer);
-
-		// after the GeoJSON data is loaded, update markers on the screen on every frame
-		// this.map.on("render", () => {
-		// 	console.error('qq', this.dataSourceId);
-		// 	if (!this.map.isSourceLoaded(this.dataSourceId)) return;
-		// 	this._updateMarkers();
-		// });
 	}
 
 

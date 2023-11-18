@@ -120,7 +120,7 @@ function handleDataSelection(e, chartContext, config) {
 	if (!props.chart_config.map_filter) {
 		return;
 	}
-	const toFilter = config.dataPointIndex;
+	const toFilter = `${config.dataPointIndex}-${config.seriesIndex}`;
 	if (toFilter !== selectedIndex.value) {
 		mapStore.addLayerFilter(
 			`${props.map_config[0].index}-${props.map_config[0].type}`,

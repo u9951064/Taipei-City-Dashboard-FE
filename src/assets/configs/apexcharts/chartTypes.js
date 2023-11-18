@@ -14,5 +14,5 @@ export const chartTypes = {
 	LineColumnChart: "折線圖+長條圖",
 	SyncingChart: "同步圖",
 	GroupedBarChart: "群組長條圖",
-	GroupedBarWithLineChart: "群組長條折線圖",
+	GroupBarWithLineChart: "群組長條折線圖",
 };
