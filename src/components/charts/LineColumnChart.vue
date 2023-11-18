@@ -33,6 +33,9 @@ const chartOptions = ref({
 		stacked: true,
 		toolbar: {
 			show: false,
+			tools: {
+				zoom: false,
+			},
 		},
 		type: props.series.line ? "line" : "bar",
 	},
@@ -91,6 +94,9 @@ const chartOptions = ref({
 			: [],
 		labels: {
 			offsetY: 5,
+		},
+		tooltip: {
+			enabled: false,
 		},
 		type: "category",
 	},

@@ -20,9 +20,8 @@ const chartOptions = ref({
 			show: false,
 		},
 	},
-	stroke: {
-		width: 1,
-		colors: ["#fff"],
+	grid: {
+		borderColor: "#555",
 	},
 	dataLabels: {
 		enabled: props.chart_config.categories ? false : true,
@@ -39,7 +38,15 @@ const chartOptions = ref({
 	xaxis: {
 		type: "category",
 		categories: props.chart_config.categories,
+		axisBorder: {
+			color: "#555",
+			height: "0.8",
+		},
+		axisTicks: {
+			show: false,
+		},
 	},
+
 	fill: {
 		opacity: 1,
 	},

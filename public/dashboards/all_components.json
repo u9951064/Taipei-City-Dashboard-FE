@@ -4085,12 +4085,7 @@
 			"history_data": true,
 			"chart_config": {
 				"types": ["DonutChart", "ColumnChart"],
-				"color": [
-					"#1D5485",
-					"#5BC2E7",
-					"#9DECF7",
-					"#DEFFFF"
-				],
+				"color": ["#1D5485", "#5BC2E7", "#9DECF7", "#DEFFFF"],
 				"flatten": true,
 				"unit": "MWh"
 			},
@@ -4407,19 +4402,15 @@
 					"112-9"
 				],
 				"color": [
-					"#f44336",
-					"#e91e63",
-					"#9c27b0",
-					"#673ab7",
-					"#3f51b5",
-					"#2196f3",
-					"#03a9f4",
-					"#00bcd4",
-					"#009688",
-					"#4caf50",
-					"#8bc34a",
-					"#cddc39",
-					"#ffeb3b"
+					"#DEFFFF",
+					"#BFF9FC",
+					"#9DECF7",
+					"#83DBF0",
+					"#5BC2E7",
+					"#429AC6",
+					"#2D75A6",
+					"#1D5485",
+					"#113C6E"
 				],
 				"types": ["SyncingChart"],
 				"unit": "輛"
@@ -4518,11 +4509,12 @@
 		"154": {
 			"id": 154,
 			"index": "renewable_energy_generation",
-			"history_data": false,
+			"history_data": true,
 			"map_config": null,
 			"chart_config": {
-				"types": ["GroupedBarChart"],
-				"unit": "度",
+				"sync_id": "renewable_energy_generation",
+				"types": ["GroupedBarChart", "SyncingChart"],
+				"unit": "百萬度",
 				"categories": [
 					"太陽光電",
 					"慣常水力",
@@ -4530,7 +4522,8 @@
 					"廢棄物能",
 					"生質能",
 					"地熱"
-				]
+				],
+				"color": ["#1D5485", "#5BC2E7", "#9DECF7", "#DEFFFF"]
 			},
 			"name": "再生能源發電結構",
 			"source": "再生能源發電結構",
