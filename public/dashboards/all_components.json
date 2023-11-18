@@ -4082,39 +4082,17 @@
 			"id": 148,
 			"index": "electricity_generation",
 			"map_config": null,
-			"history_data": false,
+			"history_data": true,
 			"chart_config": {
-				"categories": [
-					2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,
-					2022, 2023
-				],
-				"types": ["ColumnChart"],
+				"types": ["DonutChart", "ColumnChart"],
 				"color": [
-					"#f44336",
-					"#e91e63",
-					"#9c27b0",
-					"#673ab7",
-					"#3f51b5",
-					"#2196f3",
-					"#03a9f4",
-					"#00bcd4",
-					"#009688",
-					"#4caf50",
-					"#8bc34a",
-					"#cddc39",
-					"#ffeb3b"
+					"#1D5485",
+					"#5BC2E7",
+					"#9DECF7",
+					"#DEFFFF"
 				],
-				"annotations": {
-					"yaxis": [
-						{
-							"y": 172892343734,
-							"label": {
-								"text": "總電力60–70%為再生能源(以2022計算)"
-							}
-						}
-					]
-				},
-				"unit": "度"
+				"flatten": true,
+				"unit": "MWh"
 			},
 			"name": "臺灣歷年能源結構",
 			"source": "臺灣歷年能源結構",
