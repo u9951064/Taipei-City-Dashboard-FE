@@ -47,10 +47,9 @@ const generateChartOptions = (chartId, index) => {
 				return (
 					'<div class="chart-tooltip">' +
 					"<h6>" +
-					w.globals.labels[dataPointIndex] +
 					`${
 						props.chart_config.categories
-							? "-" + w.globals.seriesNames[seriesIndex]
+							? w.globals.seriesNames[seriesIndex]
 							: ""
 					}` +
 					"</h6>" +

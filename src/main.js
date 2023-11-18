@@ -37,6 +37,7 @@ import HeatmapChart from "./components/charts/HeatmapChart.vue";
 import LineColumnChart from "./components/charts/LineColumnChart.vue";
 import SyncingChart from "./components/charts/SyncingChart.vue";
 import GroupedBarChart from "./components/charts/GroupedBarChart.vue";
+import GroupBarWithLineChart from "./components/charts/GroupBarWithLineChart.vue";
 
 const app = createApp(App);
 
@@ -62,5 +63,6 @@ app.component("HeatmapChart", HeatmapChart);
 app.component("LineColumnChart", LineColumnChart);
 app.component("SyncingChart", SyncingChart);
 app.component("GroupedBarChart", GroupedBarChart);
+app.component("GroupBarWithLineChart", GroupBarWithLineChart);
 
 app.mount("#app");

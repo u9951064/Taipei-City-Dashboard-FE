@@ -4090,11 +4090,11 @@
 				"unit": "MWh"
 			},
 			"name": "臺灣歷年能源結構",
-			"source": "臺灣歷年能源結構",
+			"source": "能源署",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
 			"update_freq": 1,
-			"update_freq_unit": "day",
+			"update_freq_unit": "year",
 			"short_desc": "臺北市向可持續和可再生能源轉變的趨勢",
 			"long_desc": "臺北市向可持續和可再生能源轉變的趨勢",
 			"use_case": "臺北市向可持續和可再生能源轉變的趨勢",
@@ -4244,7 +4244,9 @@
 					"112-9"
 				],
 				"types": ["LineColumnChart"],
-				"unit": "輛"
+				"unit": "輛",
+				"lineMax": 200000,
+				"columnMax": 200000
 			},
 			"name": "臺北市電動車數量增長趨勢圖",
 			"source": "臺北市電動車數量增長趨勢圖",
@@ -4513,8 +4515,8 @@
 			"map_config": null,
 			"chart_config": {
 				"sync_id": "renewable_energy_generation",
-				"types": ["GroupedBarChart", "SyncingChart"],
-				"unit": "百萬度",
+				"types": ["SyncingChart", "GroupedBarChart"],
+				"unit": "MWh",
 				"categories": [
 					"太陽光電",
 					"慣常水力",
@@ -4526,16 +4528,49 @@
 				"color": ["#1D5485", "#5BC2E7", "#9DECF7", "#DEFFFF"]
 			},
 			"name": "再生能源發電結構",
-			"source": "再生能源發電結構",
-			"time_from": "2023-01-01T23:59:59+08:00",
-			"time_to": "2023-05-01T23:59:59+08:00",
+			"source": "能源署",
+			"time_from": "2012-01-01T00:00:00+08:00",
+			"time_to": "2023-11-15T00:00:00+08:00",
 			"update_freq": 1,
-			"update_freq_unit": "month",
+			"update_freq_unit": "year",
 			"short_desc": "再生能源發電結構",
 			"long_desc": "再生能源發電結構",
 			"use_case": "再生能源發電結構",
+			"links": ["https://www.esist.org.tw/database"],
+			"tags": [],
+			"contributors": ["tuic"]
+		},
+		"156": {
+			"id": 156,
+			"index": "green_building",
+			"history_data": false,
+			"map_config": null,
+			"chart_config": {
+				"categories": ["108", "109", "110", "111"],
+				"lineMax": 500,
+				"columnMax": 100,
+				"types": ["GroupBarWithLineChart"],
+				"color": [
+					"#113C6E",
+					"#1D5485",
+					"#2D75A6",
+					"#5BC2E7",
+					"#83DBF0",
+					"#9DECF7"
+				],
+				"unit": ""
+			},
+			"name": "歷年綠建築標章數",
+			"source": "主計處",
+			"time_from": "2015-01-01T00:00:00+08:00",
+			"time_to": "2022-12-31:00:00+08:00",
+			"update_freq": 1,
+			"update_freq_unit": "year",
+			"short_desc": "歷年綠建築標章數",
+			"long_desc": "歷年綠建築標章數",
+			"use_case": "歷年綠建築標章數",
 			"links": [
-				"https://data.taipei/dataset/detail?id=dc7e246a-a88e-42f8-8cd6-9739209af774"
+				"https://data.taipei/dataset/detail?id=168d8998-7161-4d6d-93d6-26e77b5cf009"
 			],
 			"tags": [],
 			"contributors": ["tuic"]
