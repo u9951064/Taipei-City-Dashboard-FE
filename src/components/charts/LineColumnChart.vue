@@ -13,11 +13,6 @@ const props = defineProps([
 const mapStore = useMapStore();
 
 const parseSeries = computed(() => [
-	...props.series.column.map(({ name, data }) => ({
-		name,
-		type: "column",
-		data,
-	})),
 	props.series.line
 		? {
 				name: props.series.line.name,
@@ -26,6 +21,11 @@ const parseSeries = computed(() => [
 				color: "#ffffff",
 		  }
 		: {},
+	...props.series.column.map(({ name, data }) => ({
+		name,
+		type: "column",
+		data,
+	})),
 ]);
 
 const chartOptions = ref({
@@ -52,13 +52,14 @@ const chartOptions = ref({
 	},
 	plotOptions: {
 		bar: {
-			borderRadius: 5,
+			borderRadius: 3,
+			borderRadiusApplication: "end",
 		},
 	},
 	stroke: {
 		colors: ["#282a2c"],
 		show: true,
-		width: 2,
+		width: [2],
 	},
 	tooltip: {
 		// The class "chart-tooltip" could be edited in /assets/styles/chartStyles.css
@@ -66,10 +67,9 @@ const chartOptions = ref({
 			return (
 				'<div class="chart-tooltip">' +
 				"<h6>" +
-				w.globals.labels[dataPointIndex] +
 				`${
 					props.chart_config.categories
-						? "-" + w.globals.seriesNames[seriesIndex]
+						? w.globals.seriesNames[seriesIndex]
 						: ""
 				}` +
 				"</h6>" +
@@ -82,7 +82,6 @@ const chartOptions = ref({
 		},
 	},
 	xaxis: {
-		tickAmount: 10,
 		axisBorder: {
 			show: false,
 		},
@@ -92,14 +91,26 @@ const chartOptions = ref({
 		categories: props.chart_config.categories
 			? props.chart_config.categories
 			: [],
-		labels: {
-			offsetY: 5,
-		},
 		tooltip: {
 			enabled: false,
 		},
 		type: "category",
 	},
+	yaxis: [
+		{
+			opposite: true,
+			max: props.chart_config.lineMax,
+			min: 0,
+		},
+		...props.series.column.map((_, index) => ({
+			labels: {
+				show: index === 0,
+			},
+			show: index === 0,
+			max: props.chart_config.columnMax,
+			min: 0,
+		})),
+	],
 });
 
 const selectedIndex = ref(null);
