@@ -4367,6 +4367,94 @@
 			],
 			"tags": [],
 			"contributors": ["tuic"]
+		},
+		"157": {
+			"id": 157,
+			"index": "eco_sun_energy",
+			"history_data": false,
+			"map_config": [
+				{
+					"index": "eco_sun_energy",
+					"type": "symbol",
+					"icon": "sun_energy",
+					"id": "eco_sun_energy",
+					"property": [
+						{
+							"key": "單位",
+							"name": "場所類型"
+						},
+						{
+							"key": "行政區",
+							"name": "行政區"
+						},
+						{
+							"key": "地點名稱",
+							"name": "場所名稱"
+						},
+						{
+							"key": "地址",
+							"name": "地址"
+						},
+						{
+							"key": "kWp",
+							"name": "峰瓩(kWp)"
+						}
+					],
+					"title": "太陽能發電設施"
+				}
+			],
+			"chart_config": {
+				"categories": [
+					"北投區",
+					"士林區",
+					"內湖區",
+					"南港區",
+					"松山區",
+					"信義區",
+					"中山區",
+					"大同區",
+					"中正區",
+					"萬華區",
+					"大安區",
+					"文山區"
+				],
+				"lineMax": 450,
+				"columnMax": 100,
+				"types": ["ColumnChart", "DistrictChart"],
+				"color": ["#83DBF0"],
+				"unit": "kWp",
+				"map_filter": [
+					"行政區",
+					[
+						"北投區",
+						"士林區",
+						"內湖區",
+						"南港區",
+						"松山區",
+						"信義區",
+						"中山區",
+						"大同區",
+						"中正區",
+						"萬華區",
+						"大安區",
+						"文山區"
+					]
+				]
+			},
+			"name": "臺北市太陽能光電",
+			"source": "主計處",
+			"time_from": "2015-01-01T00:00:00+08:00",
+			"time_to": "2022-12-31:00:00+08:00",
+			"update_freq": 1,
+			"update_freq_unit": "year",
+			"short_desc": "歷年綠建築標章數",
+			"long_desc": "歷年綠建築標章數",
+			"use_case": "歷年綠建築標章數",
+			"links": [
+				"https://data.taipei/dataset/detail?id=168d8998-7161-4d6d-93d6-26e77b5cf009"
+			],
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }

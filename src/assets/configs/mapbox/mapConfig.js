@@ -311,6 +311,7 @@ export const maplayerCommonLayout = {
 			0.25,
 		],
 	},
+
 	"symbol-green_building": {
 		"icon-image": [
 			"case",
@@ -327,6 +328,31 @@ export const maplayerCommonLayout = {
 			["==", ["get", "分級評估"], "免評估"],
 			"green_building_bypass",
 			"green_building_bypass",
+		],
+		"icon-size": [
+			"interpolate",
+			["linear"],
+			["zoom"],
+			0.03125,
+			0.0625,
+			0.09375,
+			0.125,
+			0.15625,
+			0.1875,
+			0.21875,
+			0.25,
+		],
+	},
+	"symbol-sun_energy": {
+		"icon-image": [
+			"case",
+			["==", ["get", "單位"], "公園"],
+			"sun_energy_park",
+			["==", ["get", "單位"], "辦公"],
+			"sun_energy_office",
+			["==", ["get", "單位"], "學校"],
+			"sun_energy_school",
+			"sun_energy_school"
 		],
 		"icon-size": [
 			"interpolate",
