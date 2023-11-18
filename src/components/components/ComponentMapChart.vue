@@ -51,8 +51,6 @@ const shouldDisable = computed(() => {
 		.length > 0;
 });
 
-
-// 這邊就是點了 toggle 後，可以看地圖
 // Open and closes the component as well as communicates to the mapStore to turn on and off map layers
 function handleToggle() {
 	if (!_mapConfig) {
@@ -64,44 +62,6 @@ function handleToggle() {
 		return;
 	}
 	if (checked.value) {
-		// console.log("=====> _mapConfig: ", _mapConfig);
-		// [
-		// 	{
-		// 		"index": "benHu_earthquake",
-		// 		"id": "earthquake_circle",
-		// 		"type": "circle",
-		// 		"filter": [
-		// 			"!=",
-		// 			"cluster",
-		// 			true
-		// 		],
-		// 		"paint": {
-		// 			"circle-color": [
-		//          .... skip..........
-		// 			],
-		// 			"circle-opacity": 0.6,
-		// 			"circle-radius": 12
-		// 		}
-		// 	},
-		// 	{
-		// 		"index": "benHu_earthquake",
-		// 		"id": "earthquake_label",
-		// 		"type": "symbol",
-		// 		"filter": [
-		// 			"!=",
-		// 			"cluster",
-		// 			true
-		// 		],
-		// 		"layout": {
-		//         .....skip.......
-		// 		},
-		// 		"paint": {
-		// 			"text-color": [
-		//        .... skip ..........
-		// 			]
-		// 		}
-		// 	}
-		// ]
 		mapStore.addToMapLayerList(_mapConfig);
 	} else {
 		mapStore.turnOffMapLayerVisibility(_mapConfig);

@@ -1,4 +1,3 @@
 export const customMapIndex = {
-	bubbleDonutChart: 'benHu_earthquake',
-	xxxx: 'xxxx',
+	ecoChargeStation: 'eco_charging_stations',
 };

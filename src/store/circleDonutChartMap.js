@@ -2,11 +2,10 @@ import { maplayerCommonLayout, maplayerCommonPaint } from "../assets/configs/map
 import mapboxGl from "mapbox-gl";
 
 export class CircleDonutChartMap {
-
 	constructor() {
 		this.map = undefined;
-		this.circleLayerSource = `benHu_earthquake-circle-source`;
-		this.symbolLayerSource = `benHu_earthquake-symbol-source`;
+		this.circleLayerSource = `eco_charging_stations-circle-source`;
+		this.symbolLayerSource = `eco_charging_stations-symbol-source`;
 		this.mapConfig = {};
 		this.markers = {};
 		this.markersOnScreen = {};
@@ -29,7 +28,7 @@ export class CircleDonutChartMap {
 
 	onRender(map) {
 		if (map.getSource(this.circleLayerSource) && map.isSourceLoaded(this.circleLayerSource)) {
-			this._updateMarkers();
+			this._updateMarkers(map);
 		}
 
 		if (!map.getSource(this.symbolLayerSource)) return;
@@ -45,7 +44,7 @@ export class CircleDonutChartMap {
 			data: { ...data },
 			// https://docs.mapbox.com/style-spec/reference/sources/#geojson-clusterProperties
 			cluster: true, // If the data is a collection of point features, setting this to true clusters the points by radius into groups.
-			clusterRadius: 80, // default is 50, Radius of each cluster if clustering is enabled. A value of 512 indicates a radius equal to the width of a tile.
+			clusterRadius: 50, // default is 50, Radius of each cluster if clustering is enabled. A value of 512 indicates a radius equal to the width of a tile.
 			clusterProperties: {
 				// ["case", condition, valueIfTrue, valueIfFalse] is a conditional statement in Mapbox GL JS's expression language.
 				// condition: This is the condition that is evaluated. If the condition is true, the expression returns valueIfTrue; otherwise, it returns valueIfFalse.
@@ -54,11 +53,8 @@ export class CircleDonutChartMap {
 
 				// 如果 level1 是對的， ret 1, 不然就 0, 然後用 + 一直加總
 				// 分成五類，每一類 count++
-				mag1: ["+", ["case", ["<", ["get", "mag"], 2], 1, 0]],
-				mag2: ["+", ["case", ["all", [">=", ["get", "mag"], 2], ["<", ["get", "mag"], 3]], 1, 0]],
-				mag3: ["+", ["case", ["all", [">=", ["get", "mag"], 3], ["<", ["get", "mag"], 4]], 1, 0]],
-				mag4: ["+", ["case", ["all", [">=", ["get", "mag"], 4], ["<", ["get", "mag"], 5]], 1, 0]],
-				mag5: ["+", ["case", [">=", ["get", "mag"], 5], 1, 0]]
+				car: ["+", ["case", ["==", ["get", "vehicle_type"], "汽車"], 1, 0]],
+				scooter: ["+", ["case", ["==", ["get", "vehicle_type"], "機車"], 1, 0]],
 			}
 		});
 	}
@@ -119,16 +115,15 @@ export class CircleDonutChartMap {
 		for (const feature of features) {
 			const coords = feature.geometry.coordinates;
 
-			// 這邊可以拿到定義的mag1, mag2, 定義在 clusterProperties
 			const props = feature.properties;
-			const {mag1, mag2, mag3, mag4, mag5} = props
+			const { car, scooter } = props
 			if (!props.cluster) continue;
 
 
 			const clusterId = props.cluster_id;
 			let marker = this.markers[clusterId];
 			if (!marker) {
-				const el = this._createDonutChart(mag1, mag2, mag3, mag4, mag5);
+				const el = this._createDonutChart([car, scooter]);
 				marker = this.markers[clusterId] = new mapboxGl.Marker({ element: el }).setLngLat(coords);
 			}
 			newMarkers[clusterId] = marker;
@@ -144,21 +139,9 @@ export class CircleDonutChartMap {
 		this.markersOnScreen = newMarkers;
 	}
 
-
-	/**
-	 * code for creating an SVG donut chart from feature properties
-	 *
-	 * @property {number} mag1 - Magnitude level.
-	 * @property {number} mag2 - Magnitude level.
-	 * @property {number} mag3 - Magnitude level.
-	 * @property {number} mag4 - Magnitude level.
-	 * @property {number} mag5 - Magnitude level.
-	 *
-	 * @return {HTMLElement} - The created SVG donut chart as an HTML element.
-	 */
-	_createDonutChart(mag1, mag2, mag3, mag4, mag5) {
+	_createDonutChart(countByEachMagArr) {
+		console.error(countByEachMagArr)
 		const offsets = []; // an array that stores cumulative offsets for each magnitude level.
-		const countByEachMagArr = [mag1, mag2, mag3, mag4, mag5];
 
 		let totalCount = 0;
 		for (const count of countByEachMagArr) {
@@ -181,10 +164,10 @@ export class CircleDonutChartMap {
 		let fontSize;
 		let outerRadius;
 
-		if (totalCount >= 1000) {
+		if (totalCount >= 40) {
 			outerRadius = 50;
 			fontSize = 22;
-		} else if (totalCount >= 100) {
+		} else if (totalCount >= 20) {
 			outerRadius = 32;
 			fontSize = 20;
 		} else if (totalCount >= 10) {
