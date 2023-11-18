@@ -41,7 +41,6 @@ const chartOptions = ref({
 	colors: props.chart_config.color,
 	dataLabels: {
 		enabled: props.chart_config.categories ? false : true,
-		// offsetY: 20,
 	},
 	grid: {
 		show: false,
