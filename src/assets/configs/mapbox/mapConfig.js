@@ -292,9 +292,9 @@ export const maplayerCommonLayout = {
 		"icon-image": [
 			"case",
 			["==", ["get", "vehicle_type"], '汽車'],
-			"charging_scooter",
-			["==", ["get", "vehicle_type"], '機車'],
 			"charging_car",
+			["==", ["get", "vehicle_type"], '機車'],
+			"charging_scooter",
 			"charging_unknown",
 		],
 		"icon-size": [

@@ -221,7 +221,6 @@ export class CircleDonutChartMap {
 		return el.firstChild;
 	}
 
-
 	/**
 	 * Creates an SVG path for a donut segment.
 	 *

@@ -517,19 +517,6 @@ export const useMapStore = defineStore("map", {
 				return;
 			}
 
-			// if (this.map.getSource(`benHu_earthquake-circle-source`) || this.map.getSource(`benHu_earthquake-symbol-source`)){
-			// 	console.log("qq");
-			// 	this.map.setFilter(
-			// 		"benHu_earthquake-circle",
-			// 		["==", ["get", property], key]
-			// 	);
-			// 	this.map.setFilter(
-			// 		"benHu_earthquake-symbol",
-			// 		["==", ["get", property], key]
-			// 	);
-			// 	return
-			// }
-
 			if (map_config && map_config.type === "arc") {
 				this.map.removeLayer(layer_id);
 				let toBeFiltered = {
@@ -543,14 +530,6 @@ export const useMapStore = defineStore("map", {
 				return;
 			}
 			this.map.setFilter(layer_id, ["==", ["get", property], key]);
-
-			// if (map_config.index === customMapIndex.ecoChargeStation) {
-			// 	this.circleDonutChartMap.setupDataSource(
-			// 		this.map,
-			// 		map_config,
-			// 		data
-			// 	);
-			// }
 		},
 		// Remove any filters on a map layer
 		clearLayerFilter(layer_id, map_config) {
