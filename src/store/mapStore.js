@@ -10,7 +10,6 @@ https://docs.mapbox.com/mapbox-gl-js/guides/
 import { createApp, defineComponent, nextTick, ref } from "vue";
 import { defineStore } from "pinia";
 import { useAuthStore } from "./authStore";
-import { useDialogStore } from "./dialogStore";
 import mapboxGl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import axios from "axios";
@@ -21,13 +20,16 @@ import {
 	MapObjectConfig,
 	TaipeiTown,
 	TaipeiVillage,
-	TaipeiBuilding,
+	// TaipeiBuilding,
 	maplayerCommonPaint,
 	maplayerCommonLayout,
 } from "../assets/configs/mapbox/mapConfig.js";
 import { savedLocations } from "../assets/configs/mapbox/savedLocations.js";
 import { calculateGradientSteps } from "../assets/configs/mapbox/arcGradient";
 import MapPopup from "../components/map/MapPopup.vue";
+import { customMapIndex } from "./customMapIndex.js";
+import { CircleDonutChartMap } from "./circleDonutChartMap.js";
+import { useDialogStore } from "./dialogStore.js";
 
 const { BASE_URL } = import.meta.env;
 
@@ -47,12 +49,19 @@ export const useMapStore = defineStore("map", {
 		savedLocations: savedLocations,
 		// Store currently loading layers,
 		loadingLayers: [],
+		loadedCollectionLayers: {},
 	}),
 	getters: {},
 	actions: {
 		/* Initialize Mapbox */
+
 		// 1. Creates the mapbox instance and passes in initial configs
 		initializeMapBox() {
+			// this.donutChartFilter = false
+
+			// init custom map class
+			this.circleDonutChartMap = new CircleDonutChartMap();
+
 			this.map = null;
 			const MAPBOXTOKEN = import.meta.env.VITE_MAPBOXTOKEN;
 			mapboxGl.accessToken = MAPBOXTOKEN;
@@ -60,13 +69,32 @@ export const useMapStore = defineStore("map", {
 				...MapObjectConfig,
 				style: mapStyle,
 			});
+			// 增加控制
 			this.map.addControl(new mapboxGl.NavigationControl());
+
+			// 雙點 zoom 取消
 			this.map.doubleClickZoom.disable();
+
 			this.map
+
+				.on("render", () => {
+					this.circleDonutChartMap.onRender(this.map);
+					// this.currentVisibleLayers.forEach(layerId => {
+					// 	if(!this.loadedCollectionLayers[layerId]) {
+					// 		return
+					// 	}
+					// 	this.circleDonutChartMap.onRender(this.map);
+					// })
+				})
+
 				.on("style.load", () => {
 					this.initializeBasicLayers();
 				})
+
 				.on("click", (event) => {
+					// disable popup click event for this data source
+					//this.circleDonutChartMap.onClick(this.map);
+
 					if (this.popup) {
 						this.popup = null;
 					}
@@ -78,10 +106,13 @@ export const useMapStore = defineStore("map", {
 					);
 				});
 		},
+
+		// 這邊會疊上基本的圖層（source + layer ）
 		// 2. Adds three basic layers to the map (Taipei District, Taipei Village labels, and Taipei 3D Buildings)
 		// Due to performance concerns, Taipei 3D Buildings won't be added in the mobile version
 		initializeBasicLayers() {
 			const authStore = useAuthStore();
+
 			fetch(`${BASE_URL}/mapData/taipei_town.geojson`)
 				.then((response) => response.json())
 				.then((data) => {
@@ -92,6 +123,7 @@ export const useMapStore = defineStore("map", {
 						})
 						.addLayer(TaipeiTown);
 				});
+
 			fetch(`${BASE_URL}/mapData/taipei_village.geojson`)
 				.then((response) => response.json())
 				.then((data) => {
@@ -102,14 +134,16 @@ export const useMapStore = defineStore("map", {
 						})
 						.addLayer(TaipeiVillage);
 				});
-			if (!authStore.isMobileDevice) {
-				this.map
-					.addSource("taipei_building_3d_source", {
-						type: "vector",
-						url: import.meta.env.VITE_MAPBOXTILE,
-					})
-					.addLayer(TaipeiBuilding);
-			}
+
+			// 很慢，先拿掉
+			// if (!authStore.isMobileDevice) {
+			// 	this.map
+			// 		.addSource("taipei_building_3d_source", {
+			// 			type: "vector",
+			// 			url: import.meta.env.VITE_MAPBOXTILE,
+			// 		})
+			// 		.addLayer(TaipeiBuilding);
+			// }
 
 			this.addSymbolSources();
 		},
@@ -117,6 +151,9 @@ export const useMapStore = defineStore("map", {
 		addSymbolSources() {
 			const images = [
 				"metro",
+				"charging_scooter",
+				"charging_car",
+				"charging_unknown",
 				"triangle_green",
 				"triangle_white",
 				"bike_green",
@@ -136,9 +173,13 @@ export const useMapStore = defineStore("map", {
 
 		/* Adding Map Layers */
 		// 1. Passes in the map_config (an Array of Objects) of a component and adds all layers to the map layer list
-		addToMapLayerList(map_config) {
-			map_config.forEach((element) => {
-				let mapLayerId = `${element.index}-${element.type}`;
+		addToMapLayerList(map_configs) {
+			map_configs.forEach((map_config) => {
+				let mapLayerId = `${map_config.index}-${map_config.type}`;
+				// console.log("=====> mapLayerId: ", mapLayerId);
+				// =====> mapLayerId:  benHu_earthquake-circle
+				// =====> mapLayerId:  benHu_earthquake-symbol
+
 				// 1-1. If the layer exists, simply turn on the visibility and add it to the visible layers list
 				if (
 					this.currentLayers.find((element) => element === mapLayerId)
@@ -154,7 +195,8 @@ export const useMapStore = defineStore("map", {
 					}
 					return;
 				}
-				let appendLayerId = { ...element };
+
+				let appendLayerId = { ...map_config };
 				appendLayerId.layerId = mapLayerId;
 				// 1-2. If the layer doesn't exist, call an API to get the layer data
 				this.loadingLayers.push(appendLayerId.layerId);
@@ -172,10 +214,20 @@ export const useMapStore = defineStore("map", {
 		},
 		// 3. Add the layer data as a source in mapbox
 		addMapLayerSource(map_config, data) {
-			this.map.addSource(`${map_config.layerId}-source`, {
-				type: "geojson",
-				data: { ...data },
-			});
+			if (map_config.index === customMapIndex.ecoChargeStation) {
+				this.circleDonutChartMap.setupDataSource(
+					this.map,
+					map_config,
+					data
+				);
+			} else {
+				this.map.addSource(`${map_config.layerId}-source`, {
+					type: "geojson",
+					// 這邊的 data 就是  地震的 的 geoJason data
+					data: { ...data },
+				});
+			}
+
 			if (map_config.type === "arc") {
 				this.AddArcMapLayer(map_config, data);
 			} else {
@@ -213,21 +265,31 @@ export const useMapStore = defineStore("map", {
 					],
 				};
 			}
+
 			this.loadingLayers.push("rendering");
-			this.map.addLayer({
-				id: map_config.layerId,
-				type: map_config.type,
-				paint: {
-					...maplayerCommonPaint[`${map_config.type}`],
-					...extra_paint_configs,
-					...map_config.paint,
-				},
-				layout: {
-					...maplayerCommonLayout[`${map_config.type}`],
-					...extra_layout_configs,
-				},
-				source: `${map_config.layerId}-source`,
-			});
+
+			if (map_config.index === customMapIndex.ecoChargeStation) {
+				this.circleDonutChartMap.setupStyleLayerAndDonutChart(
+					extra_paint_configs,
+					extra_layout_configs
+				);
+			} else {
+				this.map.addLayer({
+					id: map_config.layerId,
+					type: map_config.type,
+					paint: {
+						...maplayerCommonPaint[`${map_config.type}`],
+						...extra_paint_configs,
+						...map_config.paint,
+					},
+					layout: {
+						...maplayerCommonLayout[`${map_config.type}`],
+						...extra_layout_configs,
+					},
+					source: `${map_config.layerId}-source`,
+				});
+			}
+
 			this.currentLayers.push(map_config.layerId);
 			this.mapConfigs[map_config.layerId] = map_config;
 			this.currentVisibleLayers.push(map_config.layerId);
@@ -332,9 +394,9 @@ export const useMapStore = defineStore("map", {
 			this.map.setLayoutProperty(mapLayerId, "visibility", "visible");
 		},
 		// 6. Turn off the visibility of an exisiting map layer but don't remove it completely
-		turnOffMapLayerVisibility(map_config) {
-			map_config.forEach((element) => {
-				let mapLayerId = `${element.index}-${element.type}`;
+		turnOffMapLayerVisibility(map_configs) {
+			map_configs.forEach((map_config) => {
+				let mapLayerId = `${map_config.index}-${map_config.type}`;
 				this.loadingLayers = this.loadingLayers.filter(
 					(el) => el !== mapLayerId
 				);
@@ -364,6 +426,7 @@ export const useMapStore = defineStore("map", {
 					layers: this.currentVisibleLayers,
 				}
 			);
+
 			// Return if there is no info in the click
 			if (!clickFeatureDatas || clickFeatureDatas.length === 0) {
 				return;
@@ -453,6 +516,7 @@ export const useMapStore = defineStore("map", {
 			if (!this.map || dialogStore.dialogs.moreInfo) {
 				return;
 			}
+
 			if (map_config && map_config.type === "arc") {
 				this.map.removeLayer(layer_id);
 				let toBeFiltered = {
@@ -473,6 +537,17 @@ export const useMapStore = defineStore("map", {
 			if (!this.map || dialogStore.dialogs.moreInfo) {
 				return;
 			}
+
+			// if (this.map.getSource(`benHu_earthquake-circle-source`) || this.map.getSource(`benHu_earthquake-symbol-source`)){
+			// 	console.log("qq");
+			// 	this.map.setFilter("benHu_earthquake-circle", null);
+			//
+			// 	this.map.setFilter(
+			// 		"benHu_earthquake-symbol",
+			// 		null);
+			// 	return
+			// }
+
 			if (map_config && map_config.type === "arc") {
 				this.map.removeLayer(layer_id);
 				let toRestore = {
@@ -483,15 +558,16 @@ export const useMapStore = defineStore("map", {
 				return;
 			}
 			this.map.setFilter(layer_id, null);
+			console.error("aaaa");
 		},
 
 		/* Clearing the map */
 
 		// Called when the user is switching between maps
 		clearOnlyLayers() {
-			this.currentLayers.forEach((element) => {
-				this.map.removeLayer(element);
-				this.map.removeSource(`${element}-source`);
+			this.currentLayers.forEach((layer) => {
+				this.map.removeLayer(layer);
+				this.map.removeSource(`${layer}-source`);
 			});
 			this.currentLayers = [];
 			this.mapConfigs = {};

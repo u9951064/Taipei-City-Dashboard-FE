@@ -1,14 +1,16 @@
 // Initial Position and Settings
+// 這邊就是放 mapboxGL JS map 的 屬性
 export const MapObjectConfig = {
 	antialias: true,
 	container: "mapboxBox",
 	center: [121.536609, 25.044808],
-	maxBounds: [
-		[121.3870596781498, 24.95733863075891], // Southwest coordinates
-		[121.6998231749096, 25.21179993640203], // Northeast coordinates
-	],
+	// comment 掉讓我可以看到全世界的地圖
+	// maxBounds: [
+	// 	[121.3870596781498, 24.95733863075891], // Southwest coordinates
+	// 	[121.6998231749096, 25.21179993640203], // Northeast coordinates
+	// ],
 	zoom: 12.5,
-	minZoom: 11,
+	// minZoom: 11, // comment 掉讓我可以看到全世界的地圖
 	maxZoom: 22,
 	projection: "globe", // display the map as a 3D globe
 };
@@ -285,6 +287,29 @@ export const maplayerCommonLayout = {
 	},
 	"symbol-triangle_white": {
 		"icon-image": "triangle_white",
+	},
+	"symbol-charging_station": {
+		"icon-image": [
+			"case",
+			["==", ["get", "vehicle_type"], '汽車'],
+			"charging_car",
+			["==", ["get", "vehicle_type"], '機車'],
+			"charging_scooter",
+			"charging_unknown",
+		],
+		"icon-size": [
+			"interpolate",
+			["linear"],
+			["zoom"],
+			0.03125,
+			0.0625,
+			0.09375,
+			0.125,
+			0.15625,
+			0.1875,
+			0.21875,
+			0.25
+		],
 	},
 	"symbol-youbike": {
 		"icon-image": [

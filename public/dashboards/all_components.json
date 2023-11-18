@@ -4136,10 +4136,47 @@
 		},
 		"152": {
 			"id": 152,
-			"index": "ev_charging_station",
+			"index": "eco_charging_stations",
+			"map_config": [
+				{
+					"index": "eco_charging_stations",
+					"type": "symbol",
+					"icon": "charging_station",
+					"needCollection": false,
+					"id": "eco_charging_stations",
+					"property": [
+						{
+							"key": "vehicle_type",
+							"name": "適用車種"
+						},
+						{
+							"key": "name",
+							"name": "名稱"
+						},
+						{
+							"key": "address",
+							"name": "地址"
+						},
+						{
+							"key": "charging_stand_amount",
+							"name": "汽車"
+						},
+						{
+							"key": "battery_amount",
+							"name": "機車"
+						}
+					],
+					"filter": [
+						"!=",
+						"cluster",
+						true
+					],
+					"title": "充電樁"
+				}
+			],
 			"chart_config": {
 				"types": ["DistrictChart", "ColumnChart"],
-				"color": ["#A25FAD"],
+				"color": ["#83DBF0"],
 				"unit": "座",
 				"map_filter": [
 					"dist",
