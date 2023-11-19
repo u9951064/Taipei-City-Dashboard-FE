@@ -4085,20 +4085,28 @@
 			"history_data": true,
 			"chart_config": {
 				"types": ["DonutChart", "ColumnChart"],
-				"color": ["#DEFFFF","#9DECF7", "#5BC2E7", "#2D75A6", "#113C6E"],
+				"color": [
+					"#DEFFFF",
+					"#9DECF7",
+					"#5BC2E7",
+					"#2D75A6",
+					"#113C6E"
+				],
 				"flatten": true,
 				"unit": "%"
 			},
 			"name": "各部門碳排佔比",
-			"source": "能源署",
+			"source": "環保局",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
 			"update_freq": 1,
 			"update_freq_unit": "year",
-			"short_desc": "臺北市向可持續和可再生能源轉變的趨勢",
-			"long_desc": "臺北市向可持續和可再生能源轉變的趨勢",
-			"use_case": "臺北市向可持續和可再生能源轉變的趨勢",
-			"links": null,
+			"short_desc": "各部門碳排佔比",
+			"long_desc": "顯示臺北市各部門在碳排放佔整體的比例",
+			"use_case": "2012 ~ 2023 年「住商部門」與「運輸部門」碳盤放量佔整理比利較高",
+			"links": [
+				"https://data.taipei/dataset/detail?id=493e8019-3de7-47fa-aa9b-cb4076e540a2"
+			],
 			"tags": [],
 			"contributors": ["tuic"]
 		},
@@ -4127,9 +4135,9 @@
 			"time_to": "2023-06-30T00:00:00+08:00",
 			"update_freq": 1,
 			"update_freq_unit": "month",
-			"short_desc": "臺北市向可持續和可再生能源轉變的趨勢",
-			"long_desc": "臺北市向可持續和可再生能源轉變的趨勢",
-			"use_case": "臺北市向可持續和可再生能源轉變的趨勢",
+			"short_desc": "電動車增長趨勢圖",
+			"long_desc": "歷年各電動載具增長趨勢",
+			"use_case": "顯示2019 ~ 2023 年電動車總數，可明顯看出 2019 年之後有明顯增加",
 			"links": ["https://data.gov.tw/en/datasets/147005"],
 			"tags": [],
 			"contributors": ["tuic"]
@@ -4165,11 +4173,7 @@
 							"name": "機車"
 						}
 					],
-					"filter": [
-						"!=",
-						"cluster",
-						true
-					],
+					"filter": ["!=", "cluster", true],
 					"title": "充電樁"
 				}
 			],
@@ -4196,16 +4200,16 @@
 				]
 			},
 			"name": "電動車充電站分佈",
-			"source": "電動車充電樁行政區圖",
+			"source": "環保局",
 			"time_from": null,
 			"time_to": null,
 			"update_freq": null,
 			"update_freq_unit": null,
 			"short_desc": "電動車充電樁行政區圖",
-			"long_desc": "提供電動車基礎建設，電動車充電站分布資訊，顏色深淺代表充電站數多寡，顏色越深，代表站數相較他區更多，反之亦然。",
-			"use_case": "圖表中顏色最深為中山區，代表中山區為充電站數分佈最多區域，對於電動車用戶最友善。",
+			"long_desc": "以行政區加總充點站&充電停車位，使用深淺顏色表示數量，並提供點擊行政區連動到地圖的功能",
+			"use_case": "圖表中顏色最亮為中山區，代表中山區為充電站數分佈最多區域，對於電動車用戶最友善。",
 			"links": [
-				"https://data.taipei/dataset/detail?id=cd050577-115f-4299-b37a-012ff490a632"
+				"https://data.taipei/dataset/detail?id=c66e2f53-92f5-4ccd-8aa9-eb71a288e09e"
 			],
 			"tags": [],
 			"contributors": ["tuic"]
@@ -4255,15 +4259,17 @@
 				"color": ["#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"]
 			},
 			"name": "油車與電車趨勢",
-			"source": "能源署",
+			"source": "交通部公路局",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
 			"update_freq": null,
 			"update_freq_unit": null,
-			"short_desc": "再生能源發電結構",
-			"long_desc": "再生能源發電結構",
-			"use_case": "再生能源發電結構",
-			"links": ["https://www.esist.org.tw/database"],
+			"short_desc": "油車與電車趨勢",
+			"long_desc": "歷年「油車」與「電車」總數",
+			"use_case": "2019 ~ 2023年「油車」與「電車」總數，可見電車的數量在 2019 年之後有逐年增長趨勢",
+			"links": [
+				"https://stat.thb.gov.tw/hb01/webMain.aspx?sys=220&ym=10101&ymt=11209&kind=21&type=1&funid=1110008&cycle=1&outmode=1&compmode=0&outkind=6&fld1=1&fld27=1&codspc0=1,13,&cod12=1&rdm=R155152"
+			],
 			"tags": [],
 			"contributors": ["tuic"]
 		},
@@ -4321,26 +4327,26 @@
 					{
 						"0-1": "免評估",
 						"0-2": "合格級",
-						"0-3": "銀級",
-						"0-4": "銅級",
+						"0-3": "銅級",
+						"0-4": "銀級",
 						"0-5": "鑽石級",
 						"0-6": "黃金級",
 						"1-1": "免評估",
 						"1-2": "合格級",
-						"1-3": "銀級",
-						"1-4": "銅級",
+						"1-3": "銅級",
+						"1-4": "銀級",
 						"1-5": "鑽石級",
 						"1-6": "黃金級",
 						"2-1": "免評估",
 						"2-2": "合格級",
-						"2-3": "銀級",
-						"2-4": "銅級",
+						"2-3": "銅級",
+						"2-4": "銀級",
 						"2-5": "鑽石級",
 						"2-6": "黃金級",
 						"3-1": "免評估",
 						"3-2": "合格級",
-						"3-3": "銀級",
-						"3-4": "銅級",
+						"3-3": "銅級",
+						"3-4": "銀級",
 						"3-5": "鑽石級",
 						"3-6": "黃金級"
 					}
@@ -4352,9 +4358,9 @@
 			"time_to": "2022-12-31:00:00+08:00",
 			"update_freq": 1,
 			"update_freq_unit": "year",
-			"short_desc": "歷年綠建築標章數",
-			"long_desc": "歷年綠建築標章數",
-			"use_case": "歷年綠建築標章數",
+			"short_desc": "綠建築標章",
+			"long_desc": "歷年各量級合格綠建築標章總數",
+			"use_case": "2019 ~ 2022 年各量級合格綠建築標章總數，可明顯看到 2022年合格數量大幅增長",
 			"links": [
 				"https://data.taipei/dataset/detail?id=168d8998-7161-4d6d-93d6-26e77b5cf009"
 			],
@@ -4435,17 +4441,15 @@
 				]
 			},
 			"name": "併聯型太陽光電發電量能",
-			"source": "主計處",
+			"source": "台北市政府產業發展局",
 			"time_from": "2015-01-01T00:00:00+08:00",
 			"time_to": "2022-12-31:00:00+08:00",
 			"update_freq": 1,
 			"update_freq_unit": "year",
-			"short_desc": "歷年綠建築標章數",
-			"long_desc": "歷年綠建築標章數",
-			"use_case": "歷年綠建築標章數",
-			"links": [
-				"https://data.taipei/dataset/detail?id=168d8998-7161-4d6d-93d6-26e77b5cf009"
-			],
+			"short_desc": "併聯型太陽光電發電量能",
+			"long_desc": "提供台北市各區，太陽能發電總量資訊，X軸為台北市各區，Y軸為並聯型光電每單位發電總量",
+			"use_case": "依據最高長條圖，尋找太陽能發電總量最高區域，目前顯示中正區為最高太陽能發電總量區域",
+			"links": ["https://www.doed.gov.taipei/cp.aspx?n=7B25D58A4F467DBD"],
 			"tags": [],
 			"contributors": ["tuic"]
 		}
