@@ -4138,7 +4138,10 @@
 			"short_desc": "電動車增長趨勢圖",
 			"long_desc": "歷年各電動載具增長趨勢",
 			"use_case": "顯示2019 ~ 2023 年電動車總數，可明顯看出 2019 年之後有明顯增加",
-			"links": ["https://data.gov.tw/en/datasets/147005"],
+			"links": [
+				"https://data.gov.tw/en/datasets/147005",
+				"http://data.gov/"
+			],
 			"tags": [],
 			"contributors": ["tuic"]
 		},
@@ -4200,7 +4203,7 @@
 				]
 			},
 			"name": "電動車充電站分佈",
-			"source": "環保局",
+			"source": "主計處",
 			"time_from": null,
 			"time_to": null,
 			"update_freq": null,
@@ -4209,7 +4212,8 @@
 			"long_desc": "以行政區加總充點站&充電停車位，使用深淺顏色表示數量，並提供點擊行政區連動到地圖的功能",
 			"use_case": "圖表中顏色最亮為中山區，代表中山區為充電站數分佈最多區域，對於電動車用戶最友善。",
 			"links": [
-				"https://data.taipei/dataset/detail?id=c66e2f53-92f5-4ccd-8aa9-eb71a288e09e"
+				"https://data.taipei/dataset/detail?id=c66e2f53-92f5-4ccd-8aa9-eb71a288e09e",
+				"https://data.taipei/dataset/detail?id=155db1cd-b75b-4d80-a341-a23e820d5d52"
 			],
 			"tags": [],
 			"contributors": ["tuic"]
