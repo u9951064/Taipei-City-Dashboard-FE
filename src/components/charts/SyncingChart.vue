@@ -10,7 +10,7 @@ const generateChartOptions = (chartId, index) => {
 		chart: {
 			id: chartId,
 			group: props.chart_config.sync_id,
-			type: "bar",
+			type: "line",
 			toolbar: {
 				show: false,
 				tools: {
@@ -83,6 +83,7 @@ const generateChartOptions = (chartId, index) => {
 		},
 		yaxis: {
 			tickAmount: 3,
+			min: 0
 		},
 	};
 };

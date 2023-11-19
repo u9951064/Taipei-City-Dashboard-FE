@@ -4085,7 +4085,7 @@
 			"history_data": true,
 			"chart_config": {
 				"types": ["DonutChart", "ColumnChart"],
-				"color": ["#113C6E", "#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"],
+				"color": ["#DEFFFF","#9DECF7", "#5BC2E7", "#2D75A6", "#113C6E"],
 				"flatten": true,
 				"unit": "%"
 			},
@@ -4111,15 +4111,15 @@
 				"categories": ["2019", "2020", "2021", "2022", "2023"],
 				"color": [
 					"#DEFFFF",
-					"#9DECF7",
-					"#5BC2E7",
+					"#113C6E",
 					"#2D75A6",
-					"#113C6E"
+					"#5BC2E7",
+					"#9DECF7"
 				],
 				"types": ["LineColumnChart"],
-				"unit": "輛",
-				"lineMax": 200,
-				"columnMax": 200
+				"unit": "仟輛",
+				"lineMax": 1800,
+				"columnMax": 1800
 			},
 			"name": "電動車增長趨勢圖",
 			"source": "臺北市政府交通局",
@@ -4202,8 +4202,8 @@
 			"update_freq": null,
 			"update_freq_unit": null,
 			"short_desc": "電動車充電樁行政區圖",
-			"long_desc": "電動車充電樁行政區圖",
-			"use_case": "電動車充電樁行政區圖",
+			"long_desc": "提供電動車基礎建設，電動車充電站分布資訊，顏色深淺代表充電站數多寡，顏色越深，代表站數相較他區更多，反之亦然。",
+			"use_case": "圖表中顏色最深為中山區，代表中山區為充電站數分佈最多區域，對於電動車用戶最友善。",
 			"links": [
 				"https://data.taipei/dataset/detail?id=cd050577-115f-4299-b37a-012ff490a632"
 			],
@@ -4216,7 +4216,7 @@
 			"history_data": false,
 			"map_config": null,
 			"chart_config": {
-				"types": ["TimelineSeparateChart", "TimelineStackedChart"],
+				"types": ["TimelineSeparateChart"],
 				"unit": "%",
 				"color": [
 					"#113C6E",
@@ -4229,13 +4229,13 @@
 			},
 			"name": "各部門減碳成效",
 			"source": "環保局",
-			"time_from": "1998-01-01T23:59:59+08:00",
-			"time_to": "2020-12-31T23:59:59+08:00",
-			"update_freq": 1,
-			"update_freq_unit": "year",
-			"short_desc": "臺北市各部門排碳量比較",
-			"long_desc": "臺北市各部門排碳量比較",
-			"use_case": "臺北市各部門排碳量比較",
+			"time_from": "2005-01-01T00:00:00+08:00",
+			"time_to": "2020-01-01T00:00:00+08:00",
+			"update_freq": null,
+			"update_freq_unit": null,
+			"short_desc": "臺北市各部門減碳成效",
+			"long_desc": "以各部門2015年碳排放量為基準，檢視往後幾年，各部門碳排放量差距，正值代表，碳排較2015增加，負值代表，碳排較2015減少。",
+			"use_case": "運輸部門，2016年後，持續呈現負值，至2020年來到歷史最低，代表運輸部門近年成功逐年降低碳排放量。",
 			"links": [
 				"https://data.taipei/dataset/detail?id=493e8019-3de7-47fa-aa9b-cb4076e540a2"
 			],
@@ -4250,23 +4250,16 @@
 			"chart_config": {
 				"sync_id": "renewable_energy_generation",
 				"types": ["SyncingChart", "GroupedBarChart"],
-				"unit": "MWh",
-				"categories": [
-					"太陽光電",
-					"慣常水力",
-					"風力",
-					"廢棄物能",
-					"生質能",
-					"地熱"
-				],
+				"unit": "仟輛",
+				"categories": ["2019", "2020", "2021", "2022", "2023"],
 				"color": ["#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"]
 			},
 			"name": "油車與電車趨勢",
 			"source": "能源署",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
-			"update_freq": 1,
-			"update_freq_unit": "year",
+			"update_freq": null,
+			"update_freq_unit": null,
 			"short_desc": "再生能源發電結構",
 			"long_desc": "再生能源發電結構",
 			"use_case": "再生能源發電結構",

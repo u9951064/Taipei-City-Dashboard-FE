@@ -33,6 +33,8 @@ const chartOptions = ref({
 			dataLabels: {
 				position: "top",
 			},
+			borderRadius: 2,
+			borderRadiusApplication: 'end'
 		},
 	},
 	xaxis: {
