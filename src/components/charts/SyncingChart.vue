@@ -10,7 +10,7 @@ const generateChartOptions = (chartId, index) => {
 		chart: {
 			id: chartId,
 			group: props.chart_config.sync_id,
-			type: "line",
+			type: "bar",
 			toolbar: {
 				show: false,
 				tools: {

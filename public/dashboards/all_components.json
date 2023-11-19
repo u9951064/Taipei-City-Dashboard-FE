@@ -4085,11 +4085,11 @@
 			"history_data": true,
 			"chart_config": {
 				"types": ["DonutChart", "ColumnChart"],
-				"color": ["#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"],
+				"color": ["#113C6E", "#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"],
 				"flatten": true,
-				"unit": "MWh"
+				"unit": "%"
 			},
-			"name": "臺灣歷年能源結構",
+			"name": "各部門碳排佔比",
 			"source": "能源署",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
@@ -4108,7 +4108,7 @@
 			"map_config": null,
 			"history_data": false,
 			"chart_config": {
-				"categories": ["108", "109", "110", "111", "112"],
+				"categories": ["2019", "2020", "2021", "2022", "2023"],
 				"color": [
 					"#DEFFFF",
 					"#9DECF7",
@@ -4121,7 +4121,7 @@
 				"lineMax": 200,
 				"columnMax": 200
 			},
-			"name": "臺北市電動車數量增長趨勢圖",
+			"name": "電動車增長趨勢圖",
 			"source": "臺北市政府交通局",
 			"time_from": "2019-12-31T00:00:00+08:00",
 			"time_to": "2023-06-30T00:00:00+08:00",
@@ -4195,7 +4195,7 @@
 					]
 				]
 			},
-			"name": "電動車充電樁行政區圖",
+			"name": "電動車充電站分佈",
 			"source": "電動車充電樁行政區圖",
 			"time_from": null,
 			"time_to": null,
@@ -4217,7 +4217,7 @@
 			"map_config": null,
 			"chart_config": {
 				"types": ["TimelineSeparateChart", "TimelineStackedChart"],
-				"unit": "公噸",
+				"unit": "%",
 				"color": [
 					"#113C6E",
 					"#1D5485",
@@ -4227,7 +4227,7 @@
 					"#DEFFFF"
 				]
 			},
-			"name": "臺北市各部門排碳量比較",
+			"name": "各部門減碳成效",
 			"source": "環保局",
 			"time_from": "1998-01-01T23:59:59+08:00",
 			"time_to": "2020-12-31T23:59:59+08:00",
@@ -4261,7 +4261,7 @@
 				],
 				"color": ["#2D75A6", "#5BC2E7", "#9DECF7", "#DEFFFF"]
 			},
-			"name": "再生能源發電結構",
+			"name": "油車與電車趨勢",
 			"source": "能源署",
 			"time_from": "2012-01-01T00:00:00+08:00",
 			"time_to": "2023-11-15T00:00:00+08:00",
@@ -4310,7 +4310,7 @@
 				}
 			],
 			"chart_config": {
-				"categories": ["108", "109", "110", "111"],
+				"categories": ["2019", "2020", "2021", "2022"],
 				"lineMax": 450,
 				"columnMax": 100,
 				"types": ["GroupBarWithLineChart"],
@@ -4353,7 +4353,7 @@
 					}
 				]
 			},
-			"name": "歷年綠建築標章數",
+			"name": "綠建築標章",
 			"source": "主計處",
 			"time_from": "2015-01-01T00:00:00+08:00",
 			"time_to": "2022-12-31:00:00+08:00",
@@ -4441,7 +4441,7 @@
 					]
 				]
 			},
-			"name": "臺北市太陽能光電",
+			"name": "併聯型太陽光電發電量能",
 			"source": "主計處",
 			"time_from": "2015-01-01T00:00:00+08:00",
 			"time_to": "2022-12-31:00:00+08:00",
